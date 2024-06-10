@@ -1,0 +1,22 @@
+
+
+
+
+.text_box{
+  display: block;
+  padding: 0%;
+  height: 20vh;
+  width: 550px;
+  letter-spacing:-3px;
+  word-spacing: 1px;
+  line-height: 130%;
+  font-weight: 600;
+  font-size: 3.8vh;
+  margin: auto;
+  margin-top: 25%;
+  text-align: center;
+  /* background: linear-gradient(45deg,#818181,#cdcdcd) !important;
+  -webkit-background-clip: text !important;
+  color: transparent; */
+  color: #a9a9a9;
+}

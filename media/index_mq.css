@@ -1,0 +1,1738 @@
+
+.footer3 {
+    display: inline-flex;
+    padding: 0.3em;
+    background-color: rgba(68, 68, 68, 0); /* 배경색 변경 */
+    font-size: 8px;
+    color: rgba(0, 0, 0, 0.241);
+    position: relative; /* 위치 상대적으로 변경 */
+    bottom: -14em; /* 하단에 고정 */
+    width: 100%;
+    left: 0;
+    justify-content: center;
+    z-index: 999;
+}
+    
+    .footer3 ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        font-size: 13px;
+        color: rgba(121, 121, 121, 0.581);
+    }
+
+
+
+    .footer3 .navi3 {
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+        color: rgba(78, 78, 78, 0.305);
+        text-align: center;
+    }
+
+ 
+  
+@media screen and (min-height: 941px) {
+    .page_title {
+            margin-top: 10%;
+            font-weight: 600;
+            font-size: 2.5em;
+            line-height: 41px;
+            text-align: center;
+             }
+
+        h1 {
+            font-family: 'font', sans-serif;
+            font-size: 18px;
+            color: rgb(255, 144, 176);
+            }
+
+        html {
+            text-align: center;
+            }
+            
+        input {
+            margin-top: 12px;
+            width: 220px;
+            height: 35px;
+            margin-bottom: 8px;
+            border-radius: 8px 8px 8px 8px;
+            border: #e8e8e8 1px;
+            background-color: #fefefe;
+            padding-left: 10px;
+            color: rgb(158, 158, 158);
+        }
+        #id_ {
+            font-size: 13px;
+        }
+        #pass_ {
+            font-size: 13px;
+        }
+
+        .id_form{
+            display: inline-block;
+            color:#dea7db;
+            font-weight: 600;
+            margin-right: 0%;
+            margin-bottom: 3vh;
+            line-height: 10%;
+            text-align: left;
+        }
+        .pw_form{
+            display: inline-block;
+            color:#dea7db;
+            font-weight: 600;
+            margin-right: 0%;
+            margin-bottom: 0.3vh;
+            line-height: 10%;
+            text-align: left;
+        }
+
+
+        #submit {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-top: 1em;
+            width: 230px;
+            height: 40px;
+            border-radius: 8px 8px 8px 8px;
+            background: rgb(222,167,219);
+            background: linear-gradient(15deg,
+            rgba(222,167,219,1) 20%,
+            rgba(255,221,237,1) 100%);
+            border:#dea7db;
+            color: #fffffff3;
+            font-size: 18px;
+            font-family: 'font', sans-serif;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            box-shadow: 0px 0.7px 2.8px rgba(86, 86, 86, 0.1);
+        }
+
+
+        #forgot{
+            text-align: center;
+            margin-top: 50px;
+            border:transparent;
+            font-size: 13px;
+            color: rgb(133, 133, 133);
+            background-color:transparent;
+            font-family: 'font', sans-serif;
+            cursor: pointer;
+        }
+        
+            /* 비밀번호찾기 */
+    .btn {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 1em;
+        padding: 0.4em 2em;
+        border-radius: 30px 30px;
+        border-width: 0.7px;
+        border-color: transparent;
+        background-color: transparent;
+        font-size: 13px;
+        font-weight: 100;
+        color:rgb(138, 138, 138);
+    }
+    .btn:hover {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 1em;
+        padding: 0.4em 2em;
+        border-radius: 30px 30px;
+        border-width: 0.7px;
+        border-color: transparent;
+        background-color: transparent;
+        font-size: 13px;
+        font-weight: 100;
+        color:rgb(138, 138, 138);
+    }
+
+
+  @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+    }
+ 
+    /* .main {
+        position: relative;
+        animation: fadeInUp 1s;
+        margin-top: 45%;
+        margin-bottom: 1em;
+    } */
+
+ /* 로그인창 힌트 */
+ .modal-content7 {
+    display: inline-block;
+    margin: 50% auto;
+    background-color: #fefefe;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 900;
+    letter-spacing:-2.5px;
+    word-spacing:-2px;
+    line-height:120%;
+    padding: 10px;
+    padding-top: 3.5vh;
+    border: 1px solid #888;
+    width: 25vh;
+    height: 10vh;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+  }
+  }
+
+
+
+
+@media screen and (min-height: 741px) and (max-height: 940px) {
+    .page_title {
+            margin-top: 10%;
+            font-weight: 600;
+            font-size: 2.5em;
+            line-height: 41px;
+            text-align: center;
+             }
+
+        h1 {
+            font-family: 'font', sans-serif;
+            font-size: 18px;
+            color: rgb(255, 144, 176);
+            }
+
+        html {
+            text-align: center;
+            }
+            
+        input {
+            margin-top: 12px;
+            width: 220px;
+            height: 35px;
+            margin-bottom: 8px;
+            border-radius: 8px 8px 8px 8px;
+            border: #e8e8e8 1px;
+            background-color: #fefefe;
+            padding-left: 10px;
+            color: rgb(158, 158, 158);
+        }
+        #id_ {
+            font-size: 13px;
+        }
+        #pass_ {
+            font-size: 13px;
+        }
+
+        .id_form{
+            display: inline-block;
+            color:#dea7db;
+            font-weight: 600;
+            margin-right: 0%;
+            margin-bottom: 3vh;
+            line-height: 10%;
+            text-align: left;
+        }
+        .pw_form{
+            display: inline-block;
+            color:#dea7db;
+            font-weight: 600;
+            margin-right: 0%;
+            margin-bottom: 0.3vh;
+            line-height: 10%;
+            text-align: left;
+        }
+
+
+        #submit {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-top: 1em;
+            width: 230px;
+            height: 40px;
+            border-radius: 8px 8px 8px 8px;
+            background: rgb(222,167,219);
+            background: linear-gradient(15deg,
+            rgba(222,167,219,1) 20%,
+            rgba(255,221,237,1) 100%);
+            border:#dea7db;
+            color: #fffffff3;
+            font-size: 18px;
+            font-family: 'font', sans-serif;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            box-shadow: 0px 0.7px 2.8px rgba(86, 86, 86, 0.1);
+        }
+
+
+        #forgot{
+            text-align: center;
+            margin-top: 50px;
+            border:transparent;
+            font-size: 13px;
+            color: rgb(133, 133, 133);
+            background-color:transparent;
+            font-family: 'font', sans-serif;
+            cursor: pointer;
+        }
+        
+            /* 비밀번호찾기 */
+    .btn {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 1em;
+        padding: 0.4em 2em;
+        border-radius: 30px 30px;
+        border-width: 0.7px;
+        border-color: transparent;
+        background-color: transparent;
+        font-size: 13px;
+        font-weight: 100;
+        color:rgb(138, 138, 138);
+    }
+    .btn:hover {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 1em;
+        padding: 0.4em 2em;
+        border-radius: 30px 30px;
+        border-width: 0.7px;
+        border-color: transparent;
+        background-color: transparent;
+        font-size: 13px;
+        font-weight: 100;
+        color:rgb(138, 138, 138);
+    }
+
+
+  @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+    }
+ 
+    /* .main {
+        position: relative;
+        animation: fadeInUp 1s;
+        margin-top: 65%;
+        margin-bottom: 1em;
+    } */
+
+ /* 로그인창 힌트 */
+ .modal-content7 {
+    display: inline-block;
+    margin: 70% auto;
+    background-color: #fefefe;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 900;
+    letter-spacing:-2.5px;
+    word-spacing:-2px;
+    line-height:120%;
+    padding: 10px;
+    padding-top: 3.5vh;
+    border: 1px solid #888;
+    width: 25vh;
+    height: 10vh;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+  }
+  }
+
+
+
+
+
+  @media screen and (orientation:landscape) and (min-height: 741px){
+    .page_title {
+            margin-top: 10%;
+            font-weight: 600;
+            font-size: 2.5em;
+            line-height: 41px;
+            text-align: center;
+             }
+
+        h1 {
+            font-family: 'font', sans-serif;
+            font-size: 18px;
+            color: rgb(255, 144, 176);
+            }
+
+        html {
+            text-align: center;
+            }
+            
+        input {
+            margin-top: 12px;
+            width: 220px;
+            height: 35px;
+            margin-bottom: 8px;
+            border-radius: 8px 8px 8px 8px;
+            border: #e8e8e8 1px;
+            background-color: #fefefe;
+            padding-left: 10px;
+            color: rgb(158, 158, 158);
+        }
+        #id_ {
+            font-size: 13px;
+        }
+        #pass_ {
+            font-size: 13px;
+        }
+
+        .id_form{
+            display: inline-block;
+            color:#dea7db;
+            font-weight: 600;
+            margin-right: 0%;
+            margin-bottom: 3vh;
+            line-height: 10%;
+            text-align: left;
+        }
+        .pw_form{
+            display: inline-block;
+            color:#dea7db;
+            font-weight: 600;
+            margin-right: 0%;
+            margin-bottom: 0.3vh;
+            line-height: 10%;
+            text-align: left;
+        }
+
+
+        #submit {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-top: 1em;
+            width: 230px;
+            height: 40px;
+            border-radius: 8px 8px 8px 8px;
+            background: rgb(222,167,219);
+            background: linear-gradient(15deg,
+            rgba(222,167,219,1) 20%,
+            rgba(255,221,237,1) 100%);
+            border:#dea7db;
+            color: #fffffff3;
+            font-size: 18px;
+            font-family: 'font', sans-serif;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            box-shadow: 0px 0.7px 2.8px rgba(86, 86, 86, 0.1);
+        }
+
+
+        #forgot{
+            text-align: center;
+            margin-top: 50px;
+            border:transparent;
+            font-size: 13px;
+            color: rgb(133, 133, 133);
+            background-color:transparent;
+            font-family: 'font', sans-serif;
+            cursor: pointer;
+        }
+        
+            /* 비밀번호찾기 */
+    .btn {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 1em;
+        padding: 0.4em 2em;
+        border-radius: 30px 30px;
+        border-width: 0.7px;
+        border-color: transparent;
+        background-color: transparent;
+        font-size: 13px;
+        font-weight: 100;
+        color:rgb(138, 138, 138);
+    }
+    .btn:hover {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 1em;
+        padding: 0.4em 2em;
+        border-radius: 30px 30px;
+        border-width: 0.7px;
+        border-color: transparent;
+        background-color: transparent;
+        font-size: 13px;
+        font-weight: 100;
+        color:rgb(138, 138, 138);
+    }
+
+
+  @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+    }
+ 
+    /* .main {
+        position: relative;
+        animation: fadeInUp 1s;
+        margin-top: 25%;
+        margin-bottom: 1em;
+    } */
+
+ /* 로그인창 힌트 */
+ .modal-content7 {
+    display: inline-block;
+    margin: 30% auto;
+    background-color: #fefefe;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 900;
+    letter-spacing:-2.5px;
+    word-spacing:-2px;
+    line-height:120%;
+    padding: 10px;
+    padding-top: 3.5vh;
+    border: 1px solid #888;
+    width: 25vh;
+    height: 10vh;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+  }
+  }
+
+
+
+
+
+  @media screen and (min-height: 541px) and (max-height: 740px) {
+    .page_title {
+            margin-top: 10%;
+            font-weight: 600;
+            font-size: 2.5em;
+            line-height: 41px;
+            text-align: center;
+             }
+
+        h1 {
+            font-family: 'font', sans-serif;
+            font-size: 18px;
+            color: rgb(255, 144, 176);
+            }
+
+        html {
+            text-align: center;
+            }
+            
+        input {
+            margin-top: 12px;
+            width: 220px;
+            height: 35px;
+            margin-bottom: 8px;
+            border-radius: 8px 8px 8px 8px;
+            border: #e8e8e8 1px;
+            background-color: #fefefe;
+            padding-left: 10px;
+            color: rgb(158, 158, 158);
+        }
+        #id_ {
+            font-size: 13px;
+        }
+        #pass_ {
+            font-size: 13px;
+        }
+
+        .id_form{
+            display: inline-block;
+            color:#dea7db;
+            font-weight: 600;
+            margin-right: 0%;
+            margin-bottom: 3vh;
+            line-height: 10%;
+            text-align: left;
+        }
+        .pw_form{
+            display: inline-block;
+            color:#dea7db;
+            font-weight: 600;
+            margin-right: 0%;
+            margin-bottom: 0.3vh;
+            line-height: 10%;
+            text-align: left;
+        }
+
+
+        #submit {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-top: 1em;
+            width: 230px;
+            height: 40px;
+            border-radius: 8px 8px 8px 8px;
+            background: rgb(222,167,219);
+            background: linear-gradient(15deg,
+            rgba(222,167,219,1) 20%,
+            rgba(255,221,237,1) 100%);
+            border:#dea7db;
+            color: #fffffff3;
+            font-size: 18px;
+            font-family: 'font', sans-serif;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            box-shadow: 0px 0.7px 2.8px rgba(86, 86, 86, 0.1);
+        }
+
+
+        #forgot{
+            text-align: center;
+            margin-top: 50px;
+            border:transparent;
+            font-size: 13px;
+            color: rgb(133, 133, 133);
+            background-color:transparent;
+            font-family: 'font', sans-serif;
+            cursor: pointer;
+        }
+        
+            /* 비밀번호찾기 */
+    .btn {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 1em;
+        padding: 0.4em 2em;
+        border-radius: 30px 30px;
+        border-width: 0.7px;
+        border-color: transparent;
+        background-color: transparent;
+        font-size: 13px;
+        font-weight: 100;
+        color:rgb(138, 138, 138);
+    }
+    .btn:hover {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 1em;
+        padding: 0.4em 2em;
+        border-radius: 30px 30px;
+        border-width: 0.7px;
+        border-color: transparent;
+        background-color: transparent;
+        font-size: 13px;
+        font-weight: 100;
+        color:rgb(138, 138, 138);
+    }
+
+
+  @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+    }
+ 
+    /* .main {
+        position: relative;
+        animation: fadeInUp 1s;
+        margin-top: 45%;
+        margin-bottom: 1em;
+    } */
+
+ /* 로그인창 힌트 */
+ .modal-content7 {
+    display: inline-block;
+    margin: 70% auto;
+    background-color: #fefefe;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 900;
+    letter-spacing:-2.5px;
+    word-spacing:-2px;
+    line-height:120%;
+    padding: 10px;
+    padding-top: 3.5vh;
+    border: 1px solid #888;
+    width: 25vh;
+    height: 10vh;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+  }
+  }
+
+
+
+
+@media screen and (orientation:landscape) and (min-height: 541px) and (max-height: 740px) {
+    .page_title {
+            margin-top: 10%;
+            font-weight: 600;
+            font-size: 2.5em;
+            line-height: 41px;
+            text-align: center;
+             }
+
+        h1 {
+            font-family: 'font', sans-serif;
+            font-size: 18px;
+            color: rgb(255, 144, 176);
+            }
+
+        html {
+            text-align: center;
+            }
+            
+        input {
+            margin-top: 12px;
+            width: 220px;
+            height: 35px;
+            margin-bottom: 8px;
+            border-radius: 8px 8px 8px 8px;
+            border: #e8e8e8 1px;
+            background-color: #fefefe;
+            padding-left: 10px;
+            color: rgb(158, 158, 158);
+        }
+        #id_ {
+            font-size: 13px;
+        }
+        #pass_ {
+            font-size: 13px;
+        }
+
+        .id_form{
+            display: inline-block;
+            color:#dea7db;
+            font-weight: 600;
+            margin-right: 0%;
+            margin-bottom: 3vh;
+            line-height: 10%;
+            text-align: left;
+        }
+        .pw_form{
+            display: inline-block;
+            color:#dea7db;
+            font-weight: 600;
+            margin-right: 0%;
+            margin-bottom: 0.3vh;
+            line-height: 10%;
+            text-align: left;
+        }
+
+
+        #submit {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-top: 1em;
+            width: 230px;
+            height: 40px;
+            border-radius: 8px 8px 8px 8px;
+            background: rgb(222,167,219);
+            background: linear-gradient(15deg,
+            rgba(222,167,219,1) 20%,
+            rgba(255,221,237,1) 100%);
+            border:#dea7db;
+            color: #fffffff3;
+            font-size: 18px;
+            font-family: 'font', sans-serif;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            box-shadow: 0px 0.7px 2.8px rgba(86, 86, 86, 0.1);
+        }
+
+
+        #forgot{
+            text-align: center;
+            margin-top: 50px;
+            border:transparent;
+            font-size: 13px;
+            color: rgb(133, 133, 133);
+            background-color:transparent;
+            font-family: 'font', sans-serif;
+            cursor: pointer;
+        }
+        
+            /* 비밀번호찾기 */
+    .btn {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 1em;
+        padding: 0.4em 2em;
+        border-radius: 30px 30px;
+        border-width: 0.7px;
+        border-color: transparent;
+        background-color: transparent;
+        font-size: 13px;
+        font-weight: 100;
+        color:rgb(138, 138, 138);
+    }
+    .btn:hover {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 1em;
+        padding: 0.4em 2em;
+        border-radius: 30px 30px;
+        border-width: 0.7px;
+        border-color: transparent;
+        background-color: transparent;
+        font-size: 13px;
+        font-weight: 100;
+        color:rgb(138, 138, 138);
+    }
+
+
+  @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+    }
+ 
+    /* .main {
+        position: relative;
+        animation: fadeInUp 1s;
+        margin-top: 20%;
+        margin-bottom: 1em;
+    } */
+
+ /* 로그인창 힌트 */
+ .modal-content7 {
+    display: inline-block;
+    margin: 25% auto;
+    background-color: #fefefe;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 900;
+    letter-spacing:-2.5px;
+    word-spacing:-2px;
+    line-height:120%;
+    padding: 10px;
+    padding-top: 3.5vh;
+    border: 1px solid #888;
+    width: 25vh;
+    height: 10vh;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+  }
+  }
+
+
+
+
+
+@media screen and (min-height: 441px) and (max-height: 540px) {
+    .page_title {
+            margin-top: 10%;
+            font-weight: 600;
+            font-size: 2.5em;
+            line-height: 41px;
+            text-align: center;
+             }
+
+        h1 {
+            font-family: 'font', sans-serif;
+            font-size: 18px;
+            color: rgb(255, 144, 176);
+            }
+
+        html {
+            text-align: center;
+            }
+            
+        input {
+            margin-top: 12px;
+            width: 220px;
+            height: 35px;
+            margin-bottom: 8px;
+            border-radius: 8px 8px 8px 8px;
+            border: #e8e8e8 1px;
+            background-color: #fefefe;
+            padding-left: 10px;
+            color: rgb(158, 158, 158);
+        }
+        #id_ {
+            font-size: 13px;
+        }
+        #pass_ {
+            font-size: 13px;
+        }
+
+        .id_form{
+            display: inline-block;
+            color:#dea7db;
+            font-weight: 600;
+            margin-right: 0%;
+            margin-bottom: 3vh;
+            line-height: 10%;
+            text-align: left;
+        }
+        .pw_form{
+            display: inline-block;
+            color:#dea7db;
+            font-weight: 600;
+            margin-right: 0%;
+            margin-bottom: 0.3vh;
+            line-height: 10%;
+            text-align: left;
+        }
+
+
+        #submit {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-top: 1em;
+            width: 230px;
+            height: 40px;
+            border-radius: 8px 8px 8px 8px;
+            background: rgb(222,167,219);
+            background: linear-gradient(15deg,
+            rgba(222,167,219,1) 20%,
+            rgba(255,221,237,1) 100%);
+            border:#dea7db;
+            color: #fffffff3;
+            font-size: 18px;
+            font-family: 'font', sans-serif;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            box-shadow: 0px 0.7px 2.8px rgba(86, 86, 86, 0.1);
+        }
+
+
+        #forgot{
+            text-align: center;
+            margin-top: 50px;
+            border:transparent;
+            font-size: 13px;
+            color: rgb(133, 133, 133);
+            background-color:transparent;
+            font-family: 'font', sans-serif;
+            cursor: pointer;
+        }
+        
+            /* 비밀번호찾기 */
+    .btn {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 1em;
+        padding: 0.4em 2em;
+        border-radius: 30px 30px;
+        border-width: 0.7px;
+        border-color: transparent;
+        background-color: transparent;
+        font-size: 13px;
+        font-weight: 100;
+        color:rgb(138, 138, 138);
+    }
+    .btn:hover {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 1em;
+        padding: 0.4em 2em;
+        border-radius: 30px 30px;
+        border-width: 0.7px;
+        border-color: transparent;
+        background-color: transparent;
+        font-size: 13px;
+        font-weight: 100;
+        color:rgb(138, 138, 138);
+    }
+
+
+  @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+    }
+ 
+    /* .main {
+        position: relative;
+        animation: fadeInUp 1s;
+        margin-top: 25%;
+        margin-bottom: 1em;
+    } */
+
+ /* 로그인창 힌트 */
+.modal-content7 {
+  display: inline-block;
+  background-color: #fefefe;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 900;
+  letter-spacing:-2.5px;
+  word-spacing:-2px;
+  line-height:120%;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding-top: 0.8em;
+  border: 1px solid #888;
+  width: 8em; /* Could be more or less, depending on screen size */
+  height: 3em;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+}   
+  }
+
+
+
+
+
+
+
+ @media screen and (orientation:landscape) and (min-height: 341px) and (max-height: 440px) {
+    .page_title {
+            margin-top: 50%;
+            font-weight: 600;
+            font-size: 2.5em;
+            line-height: 41px;
+            text-align: center;
+             }
+
+        /* .pinkbox {
+            position: relative;
+            margin: 7em auto;
+            display: inline-block;
+            align-items: center;       
+            background: rgba(255, 255, 255, 0.2);
+            width: 240px;
+            height: 415px;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 2px 2px 6px rgba(0,0,0,.1);
+        } */
+
+        h1 {
+            font-family: 'font', sans-serif;
+            font-size: 18px;
+            color: rgb(255, 144, 176);
+            }
+
+        html {
+            text-align: center;
+            }
+            
+        input {
+            margin-top: 12px;
+            width: 220px;
+            height: 35px;
+            margin-bottom: 8px;
+            border-radius: 8px 8px 8px 8px;
+            border: #e8e8e8 1px;
+            background-color: #fefefe;
+            padding-left: 10px;
+            color: rgb(158, 158, 158);
+        }
+        #id_ {
+            font-size: 13px;
+        }
+        #pass_ {
+            font-size: 13px;
+        }
+
+        .id_form{
+            display: inline-block;
+            color:#dea7db;
+            font-weight: 600;
+            margin-right: 0%;
+            margin-bottom: 3vh;
+            line-height: 10%;
+            text-align: left;
+        }
+        .pw_form{
+            display: inline-block;
+            color:#dea7db;
+            font-weight: 600;
+            margin-right: 0%;
+            margin-bottom: 0.3vh;
+            line-height: 10%;
+            text-align: left;
+        }
+
+
+        #submit {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-top: 1em;
+            width: 230px;
+            height: 40px;
+            border-radius: 8px 8px 8px 8px;
+            background: rgb(222,167,219);
+            background: linear-gradient(15deg,
+            rgba(222,167,219,1) 20%,
+            rgba(255,221,237,1) 100%);
+            border:#dea7db;
+            color: #fffffff3;
+            font-size: 18px;
+            font-family: 'font', sans-serif;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            box-shadow: 0px 0.7px 2.8px rgba(86, 86, 86, 0.1);
+        }
+
+
+        #forgot{
+            text-align: center;
+            margin-top: 50px;
+            border:transparent;
+            font-size: 13px;
+            color: rgb(133, 133, 133);
+            background-color:transparent;
+            font-family: 'font', sans-serif;
+            cursor: pointer;
+        }
+        
+            /* 비밀번호찾기 */
+    .btn {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 1em;
+        padding: 0.4em 2em;
+        border-radius: 30px 30px;
+        border-width: 0.7px;
+        border-color: transparent;
+        background-color: transparent;
+        font-size: 13px;
+        font-weight: 100;
+        color:rgb(138, 138, 138);
+    }
+    .btn:hover {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 1em;
+        padding: 0.4em 2em;
+        border-radius: 30px 30px;
+        border-width: 0.7px;
+        border-color: transparent;
+        background-color: transparent;
+        font-size: 13px;
+        font-weight: 100;
+        color:rgb(138, 138, 138);
+    }
+
+
+  @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+    }
+ 
+    /* .main {
+        position: relative;
+        animation: fadeInUp 1s;
+        margin-top: 6%;
+        margin-bottom: 1em;
+    } */
+
+ /* 로그인창 힌트 */
+.modal-content7 {
+  display: inline-block;
+  background-color: #fefefe;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 900;
+  letter-spacing:-2.5px;
+  word-spacing:-2px;
+  line-height:120%;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding-top: 0.8em;
+  border: 1px solid #888;
+  width: 8em; /* Could be more or less, depending on screen size */
+  height: 3em;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+}   
+  }
+
+
+  @media screen and (min-height: 241px) and (max-height: 340px) {
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+    }
+ 
+    /* .main {
+        position: relative;
+        animation: fadeInUp 1s;
+        margin-top: 3%;
+        margin-bottom: 1em;
+    } */
+
+    .page_title {
+            margin-top: 10em;
+            font-weight: 600;
+            font-size: 2.5em;
+            line-height: 41px;
+            text-align: center;
+             }
+             
+        h1 {
+            font-family: 'font', sans-serif;
+            font-size: 18px;
+            color: rgb(255, 144, 176);
+            }
+
+        html {
+            text-align: center;
+            }
+            
+        input {
+            margin-top: 12px;
+            width: 170px;
+            height: 35px;
+            margin-bottom: 8px;
+            border-radius: 8px 8px 8px 8px;
+            border: #e8e8e8 1px;
+            background-color: #fefefe;
+            padding-left: 10px;
+            color: rgb(158, 158, 158);
+        }
+        #id_ {
+            font-size: 13px;
+        }
+        #pass_ {
+            font-size: 13px;
+        }
+
+        .id_form{
+            display: inline-block;
+            color:#dea7db;
+            font-weight: 600;
+            margin-right: 0%;
+            margin-bottom: 3vh;
+            line-height: 10%;
+            text-align: left;
+        }
+        .pw_form{
+            display: inline-block;
+            color:#dea7db;
+            font-weight: 600;
+            margin-right: 0%;
+            margin-bottom: 0.3vh;
+            line-height: 10%;
+            text-align: left;
+        }
+
+
+        #submit {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-top: 0.5em;
+            width: 180px;
+            height: 40px;
+            border-radius: 8px 8px 8px 8px;
+            background: rgb(222,167,219);
+            background: linear-gradient(15deg,
+            rgba(222,167,219,1) 20%,
+            rgba(255,221,237,1) 100%);
+            border:#dea7db;
+            color: #fffffff3;
+            font-size: 18px;
+            font-family: 'font', sans-serif;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            box-shadow: 0px 0.7px 2.8px rgba(86, 86, 86, 0.1);
+        }
+
+     /* #submit:hover{
+        justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-top: 0.5em;
+            width: 230px;
+            height: 40px;
+            border-radius: 8px 8px 8px 8px;
+            background: rgb(222,167,219);
+            background: linear-gradient(105deg,
+            rgba(222,167,219,1) 0%,
+            rgb(249, 221, 232) 100%);
+            border:#dea7db;
+            color: #ffffff;
+            font-size: 18px;
+            font-family: 'font', sans-serif;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            box-shadow: 0px 0.7px 2.8px rgba(86, 86, 86, 0.1);
+            transition: all .5s;
+            animation: fadeIn 0.3s forwards;
+     }    */
+
+        #forgot{
+            text-align: center;
+            margin-top: 29px;
+            border:transparent;
+            font-size: 13px;
+            color: rgb(133, 133, 133);
+            background-color:transparent;
+            font-family: 'font', sans-serif;
+            cursor: pointer;
+        }
+        
+            /* 비밀번호찾기 */
+    .btn {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 0.5em;
+        padding: 0.4em 2em;
+        border-radius: 30px 30px;
+        border-width: 0.7px;
+        border-color: transparent;
+        background-color: transparent;
+        font-size: 13px;
+        font-weight: 100;
+        color:rgb(138, 138, 138);
+    }
+    .btn:hover {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 0.5em;
+        padding: 0.4em 2em;
+        border-radius: 30px 30px;
+        border-width: 0.7px;
+        border-color: transparent;
+        background-color: transparent;
+        font-size: 13px;
+        font-weight: 100;
+        color:rgb(138, 138, 138);
+    }
+
+
+ /* 로그인창 힌트 */
+.modal-content7 {
+  display: inline-block;
+  background-color: #fefefe;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 900;
+  letter-spacing:-2.5px;
+  word-spacing:-2px;
+  line-height:120%;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding-top: 0.8em;
+  border: 1px solid #888;
+  width: 8em; /* Could be more or less, depending on screen size */
+  height: 3em;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+}   
+  }
+  
+
+
+  @media screen and (max-width: 240px) {
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+    }
+ 
+    /* .main {
+        max-width: 10%;
+        position: relative;
+        animation: fadeInUp 1s;
+        margin-top: 12%;
+        margin-bottom: 0.3em;
+    } */
+
+    .page_title {
+            margin-top: 10em;
+            font-weight: 600;
+            font-size: 2.5em;
+            line-height: 41px;
+            text-align: center;
+             }
+             
+        h1 {
+            font-family: 'font', sans-serif;
+            font-size: 18px;
+            color: rgb(255, 144, 176);
+            }
+
+        html {
+            text-align: center;
+            }
+            
+        input {
+            margin-top: 12px;
+            width: 170px;
+            height: 35px;
+            margin-bottom: 8px;
+            border-radius: 8px 8px 8px 8px;
+            border: #e8e8e8 1px;
+            background-color: #fefefe;
+            padding-left: 10px;
+            color: rgb(158, 158, 158);
+        }
+        #id_ {
+            font-size: 13px;
+        }
+        #pass_ {
+            font-size: 13px;
+        }
+
+        .id_form{
+            display: inline-block;
+            color:#dea7db;
+            font-weight: 600;
+            margin-right: 0%;
+            margin-bottom: 3vh;
+            line-height: 10%;
+            text-align: left;
+        }
+        .pw_form{
+            display: inline-block;
+            color:#dea7db;
+            font-weight: 600;
+            margin-right: 0%;
+            margin-bottom: 0.3vh;
+            line-height: 10%;
+            text-align: left;
+        }
+
+
+        #submit {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-top: 0.5em;
+            width: 180px;
+            height: 40px;
+            border-radius: 8px 8px 8px 8px;
+            background: rgb(222,167,219);
+            background: linear-gradient(15deg,
+            rgba(222,167,219,1) 20%,
+            rgba(255,221,237,1) 100%);
+            border:#dea7db;
+            color: #fffffff3;
+            font-size: 18px;
+            font-family: 'font', sans-serif;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            box-shadow: 0px 0.7px 2.8px rgba(86, 86, 86, 0.1);
+        }
+
+
+
+        #forgot{
+            text-align: center;
+            margin-top: 29px;
+            border:transparent;
+            font-size: 13px;
+            color: rgb(133, 133, 133);
+            background-color:transparent;
+            font-family: 'font', sans-serif;
+            cursor: pointer;
+        }
+        
+            /* 비밀번호찾기 */
+    .btn {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 0.5em;
+        padding: 0.4em 2em;
+        border-radius: 30px 30px;
+        border-width: 0.7px;
+        border-color: transparent;
+        background-color: transparent;
+        font-size: 13px;
+        font-weight: 100;
+        color:rgb(138, 138, 138);
+    }
+    .btn:hover {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 0.5em;
+        padding: 0.4em 2em;
+        border-radius: 30px 30px;
+        border-width: 0.7px;
+        border-color: transparent;
+        background-color: transparent;
+        font-size: 13px;
+        font-weight: 100;
+        color:rgb(138, 138, 138);
+    }
+
+
+ /* 로그인창 힌트 */
+.modal-content7 {
+  display: inline-block;
+  background-color: #fefefe;
+  text-align: center;                                                                                                                                                                                                                                                                                                                                                                                                                                            
+  font-size: 2em;
+  font-weight: 900;
+  letter-spacing:-2.5px;
+  word-spacing:-2px;
+  line-height:120%;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding-top: 0.8em;
+  border: 1px solid #888;
+  width: 8em; /* Could be more or less, depending on screen size */
+  height: 3em;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+}   
+  }
+
+
+
+  @media screen and (min-width: 251px) {
+  .page_title {
+    margin-top: -10%;
+    font-weight: 600;
+    font-size: 2.5em;
+    line-height: 41px;
+    text-align: center;
+     }
+
+h1 {
+    font-family: 'font', sans-serif;
+    font-size: 18px;
+    color: rgb(255, 144, 176);
+    }
+
+html {
+    text-align: center;
+    }
+    
+input {
+    margin-top: 12px;
+    width: 220px;
+    height: 35px;
+    margin-bottom: 8px;
+    border-radius: 8px 8px 8px 8px;
+    border: #e8e8e8 1px;
+    background-color: #fefefe;
+    padding-left: 10px;
+    color: rgb(158, 158, 158);
+}
+#id_ {
+    font-size: 13px;
+}
+#pass_ {
+    font-size: 13px;
+}
+
+.id_form{
+    display: inline-block;
+    color:#dea7db;
+    font-weight: 600;
+    margin-right: 0%;
+    margin-bottom: 3vh;
+    line-height: 10%;
+    text-align: left;
+}
+.pw_form{
+    display: inline-block;
+    color:#dea7db;
+    font-weight: 600;
+    margin-right: 0%;
+    margin-bottom: 0.3vh;
+    line-height: 10%;
+    text-align: left;
+}
+
+
+#submit {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 1em;
+    width: 230px;
+    height: 40px;
+    border-radius: 8px 8px 8px 8px;
+    background: rgb(222,167,219);
+    background: linear-gradient(15deg,
+    rgba(222,167,219,1) 20%,
+    rgba(255,221,237,1) 100%);
+    border:#dea7db;
+    color: #fffffff3;
+    font-size: 18px;
+    font-family: 'font', sans-serif;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    box-shadow: 0px 0.7px 2.8px rgba(86, 86, 86, 0.1);
+}
+
+
+#forgot{
+    text-align: center;
+    margin-top: 50px;
+    border:transparent;
+    font-size: 13px;
+    color: rgb(133, 133, 133);
+    background-color:transparent;
+    font-family: 'font', sans-serif;
+    cursor: pointer;
+}
+
+    /* 비밀번호찾기 */
+.btn {
+display: inline-block;
+cursor: pointer;
+margin-top: 1em;
+padding: 0.4em 2em;
+border-radius: 30px 30px;
+border-width: 0.7px;
+border-color: transparent;
+background-color: transparent;
+font-size: 13px;
+font-weight: 100;
+color:rgb(138, 138, 138);
+}
+.btn:hover {
+display: inline-block;
+cursor: pointer;
+margin-top: 1em;
+padding: 0.4em 2em;
+border-radius: 30px 30px;
+border-width: 0.7px;
+border-color: transparent;
+background-color: transparent;
+font-size: 13px;
+font-weight: 100;
+color:rgb(138, 138, 138);
+}
+
+
+@keyframes fadeInUp {
+0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+}
+to {
+    opacity: 1;
+    transform: translateZ(0);
+}
+}
+
+/* .main {
+position: relative;
+animation: fadeInUp 1s;
+margin-top: 18em;
+margin-bottom: 1em;
+} */
+
+/* 로그인창 힌트 */
+.modal-content7 {
+display: inline-block;
+margin: 50% auto;
+background-color: #fefefe;
+text-align: center;
+font-size: 3vh;
+font-weight: 900;
+letter-spacing:-2.5px;
+word-spacing:-2px;
+line-height:120%;
+padding: 10px;
+padding-top: 3.5vh;
+border: 1px solid #888;
+width: 25vh;
+height: 10vh;
+background: #fff;
+border-radius: 15px;
+box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+}
+  }
+
+  
+  @media screen and (max-width: 872px){
+
+ /* 로그인창 힌트 */
+ .modal-content7 {
+    display: inline-block;
+    margin: 15em auto;
+    background-color: #fefefe;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 900;
+    letter-spacing:-2.5px;
+    word-spacing:-2px;
+    line-height:120%;
+    padding: 10px;
+    padding-top: 3.5vh;
+    border: 1px solid #888;
+    width: 25vh;
+    height: 10vh;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+  }
+    }
+          
+          
+    @media screen and (min-width: 873px){
+
+ /* 로그인창 힌트 */
+ .modal-content7 {
+    display: inline-block;
+    margin: 15em auto;
+    background-color: #fefefe;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 900;
+    letter-spacing:-2.5px;
+    word-spacing:-2px;
+    line-height:120%;
+    padding: 10px;
+    padding-top: 3.5vh;
+    border: 1px solid #888;
+    width: 25vh;
+    height: 10vh;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+  }
+      
+    }
