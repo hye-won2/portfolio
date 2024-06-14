@@ -3,35 +3,6 @@
     overflow: hidden;
 } */
 
-
-.pinkbox {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1000;
-    /* 나머지 스타일은 그대로 유지 */
-    margin: 0;
-}
-
-.pinkbox form {
-    margin-top: 40px;
-    margin-bottom: 20px; /* form 요소 아래에 20px의 여백 추가 */
-}
-
-.pinkbox img.main-logo-img {
-    max-width: 200px;
-    content: url(/images/logo.png);
-    /* top과 left를 50%로 설정하여 가운데로 이동 */
-    top: 0; /* pinkbox 상단에 배치되도록 top을 0으로 설정 */
-    left: 50%;
-    /* transform 속성을 사용하여 요소를 가운데로 정확하게 이동 */
-    transform: translate(-50%, -50%);
-    position: absolute; /* 부모 요소인 .pinkbox에 대해 위치를 설정하기 위해 position을 absolute로 설정 */
-    z-index: 1001; /* 로고가 pinkbox 위에 나타나도록 설정 */
-}
-
-
 .page_title {
     margin-top: 22%;
     font-weight: 600;
@@ -208,5 +179,3 @@ animation: fadeInUp 1s;
 margin-top: 10em;
 margin-bottom: 2em;
 }
-
-
