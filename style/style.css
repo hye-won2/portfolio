@@ -223,6 +223,7 @@ html, body {
 
 
 
+
   /* 모바일 사이드바 */
   .navBox {
     /* display: none; */
@@ -232,6 +233,18 @@ html, body {
     font-size: 1.6em;
     margin: 5px;
   }
+  
+  /* @media screen and (hover: hover) and (min-width: 1101px) { } */
+
+ @media screen and (hover: hover) and (max-width: 1100px) {
+ .gnb{
+    display: none;
+    }
+
+   .navBox {
+   display: flex;
+    }
+    }
 
 
   @media screen and (orientation:landscape) and (min-height: 601px) and (max-height: 700px) {
@@ -245,7 +258,7 @@ html, body {
       margin: 5px;
     }
   }
-
+  
 
 
             /* PC 모바일 구분 */
@@ -1597,106 +1610,6 @@ h4 {
 
 
 
-.btn {
-  display: inline-block;
-  margin-top: 1em;
-  padding: 0.8em 2.9em;
-  border-radius: 11px 11px 11px 11px;
-  background-color: #b477ae;
-  color: white;
-}
-.btn:hover {
-  display: inline-block;
-  padding: 0.8em 2.9em;
-  border-radius: 11px 11px 11px 11px;
-  background-color: #fdd4d4;
-  color: #ffffff;
-  transition: all .5s;
-  animation: fadeIn 0.3s forwards;
-}
-
-/* 메인 패키지디자인 버튼 */
-.btn1 {
-  display: inline-block;
-
-  border-radius: 40px;
-  font-size: 1.8vh;
-  top: 68%;
-  margin-top: 9vh;
-  padding: 0.8vh 8vh;
-  background-color: #b477ae;
-  color: white;
-}
-.btn1:hover {
-  background-color: #A576AB;
-  color: white;
-  transition: all .5s;
-  animation: fadeIn 0.3s forwards;
-}
-
-/* 메인 시각디자인 버튼 */
-.btn2 {
-  display: inline-block;
-  position: relative;
-  border-radius: 40px;
-  font-size: 1.8vh;
-  top: 68%;
-  margin-top: 9vh;
-  padding: 0.8vh 8vh;
-  background-color: #b477ae;
-  color: white;
-}
-
-.btn2:hover {
-  background-color: #A576AB;
-  color: white;
-  transition: all .5s;
-  animation: fadeIn 0.3s forwards;
-}
-
-/* 메인 영상제작 버튼 */
-.btn3 {
-  display: inline-block;
-  position: relative;
-  border-radius: 40px;
-  font-size: 1.8vh;
-  top: 68%;
-  margin-top: 9vh;
-  padding: 0.8vh 8vh;
-  background-color: #b477ae;
-  color: white;
-}
-
-
-.btn3:hover {
-  background-color: #A576AB;
-  color: white;
-  transition: all .5s;
-  animation: fadeIn 0.3s forwards;
-}
-
-
-/* 기존 메인 프로필 버튼 */
-.btn4 {
-  display: inline-block;
-  position: absolute;
-  border-radius: 40px;
-  font-size: 1.8vh;
-  top: 68%;
-  left: 50%;
-  margin-top: 2vh;
-  margin-left: -10vh;
-  padding: 0.8vh 8vh;
-  background-color: #b477ae;
-  color: white;
-}
-
-.btn4:hover {
-  background-color: #A576AB;
-  color: white;
-  transition: all .5s;
-  animation: fadeIn 0.3s forwards;
-}
 
 .btn5 {
   cursor: pointer;
@@ -6904,10 +6817,11 @@ figure.imageblock,
   }
 }
 
+/* 메인 프로필 이미지 */
 .img_box5{
   display:block;
   margin:auto;
-  margin-bottom:-23%;
+  margin-bottom:2%;
   width:20vh;
 }
 
