@@ -2936,28 +2936,36 @@ height: 40px;
 
 /* 경력사항 로고이미지 */
 .logo-kl{
+  display: flex;
   justify-content:space-between;
   margin-top: 10px;
+  margin-bottom: 10px;
   max-height: 20px;
 }
 
 
 .logo-ds{
+  display: flex;
   justify-content:space-between;
   margin-top: 10px;
+  margin-bottom: 10px;
   max-height: 20px;
 }
 
 .logo-cel{
+  display: flex;
   justify-content:space-between;
   margin-top: 10px;
+  margin-bottom: 10px;
   max-height: 30px;
 }
 
 
 .logo-ts{
+  display: flex;
   justify-content:space-between;
   margin-top: 10px;
+  margin-bottom: 10px;
   max-height: 40px;
 }
 
@@ -3341,6 +3349,7 @@ height: 40px;
  
    /* 프로필사진 */
   .pro-img{
+    display: flex;
     float: right;
     margin-top: -2px;
     width: 11em;
