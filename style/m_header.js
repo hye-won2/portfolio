@@ -57,34 +57,26 @@ document.addEventListener("DOMContentLoaded", function () {
     menuItems.forEach(function (menuItem) {
         const menuTitle = menuItem.querySelector(".menu_title");
         const submenu = menuItem.querySelector(".submenu");
-        const allSubmenus = document.querySelectorAll(".submenu");
-        
+
         menuTitle.addEventListener("click", function () {
+            const isActive = menuTitle.classList.contains("active");
+
             // 모든 메뉴 타이틀에서 active 클래스 제거
             menuItems.forEach(function (item) {
-                item.querySelector(".menu_title").classList.remove("active");
-            });
-
-            allSubmenus.forEach(function (otherSubmenu) {
-                if (otherSubmenu !== submenu) {
-                    otherSubmenu.style.height = "0px"; // 다른 서브메뉴 닫기
+                if (item !== menuItem) {
+                    item.querySelector(".menu_title").classList.remove("active");
+                    item.querySelector(".submenu").style.height = "0";
                 }
             });
 
-
-            if (submenu.style.height === "0px") {
-                // 현재 브라우저의 너비 확인
-                const windowWidth = window.innerWidth;
-                if (windowWidth >= 501) {
-                    submenu.style.height = "9rem";
-                } else {
-                    submenu.style.height = "7rem";
-                }
+            if (!isActive) {
+                // 서브메뉴의 실제 높이를 계산하여 설정
+                submenu.style.height = `${submenu.scrollHeight}px`;
                 menuTitle.classList.add("active"); // 클래스 추가
             } else {
                 submenu.style.height = "0";
+                menuTitle.classList.remove("active"); // 클래스 제거
             }
         });
     });
 });
-

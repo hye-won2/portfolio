@@ -104,12 +104,14 @@ if (elem.requestFullscreen) {
 html {
   overflow: hidden;
   scroll-behavior:smooth;
-  -webkit-tap-highlight-color : transparent;
   }
 
   input:focus{
     outline:none;
+    -webkit-tap-highlight-color : transparent;
   }
+
+
 
 
   .test_obj {
