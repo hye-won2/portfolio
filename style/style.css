@@ -104,8 +104,18 @@ if (elem.requestFullscreen) {
 html {
   overflow: hidden;
   scroll-behavior:smooth;
+  -webkit-tap-highlight-color : transparent;
   }
 
+  input:focus{
+    outline:none;
+  }
+
+
+  .test_obj {
+    -webkit-tap-highlight-color : transparent !important;
+}
+  
 @media (prefers-reduced-motion: reduce) {
   html {
       scroll-behavior: auto;
@@ -233,6 +243,7 @@ html, body {
     font-size: 1.6em;
     margin: 5px;
   }
+  
   
   /* @media screen and (hover: hover) and (min-width: 1101px) { } */
 
@@ -2926,7 +2937,6 @@ height: 40px;
   justify-content:space-between;
   margin-top: 10px;
   max-height: 20px;
-  content: url(/images/logo/kl.png);
 }
 
 
@@ -2934,14 +2944,12 @@ height: 40px;
   justify-content:space-between;
   margin-top: 10px;
   max-height: 20px;
-  content: url(/images/logo/ds.png);
 }
 
 .logo-cel{
   justify-content:space-between;
   margin-top: 10px;
   max-height: 30px;
-  content: url(/images/logo/cel.png);
 }
 
 
@@ -2949,7 +2957,6 @@ height: 40px;
   justify-content:space-between;
   margin-top: 10px;
   max-height: 40px;
-  content: url(/images/logo/ts.png);
 }
 
 
@@ -3332,12 +3339,11 @@ height: 40px;
  
    /* 프로필사진 */
   .pro-img{
-   display: block;
-   float: right;
-   margin-top: -2px;
-   width: 11em;
-   margin-right: -2px;
-   content: url(/images/phw_profile.png);
+    display: block;
+    float: right;
+    margin-top: -2px;
+    width: 11em;
+    margin-right: -2px;
  }   
  
    /* 교육이수내역 */
