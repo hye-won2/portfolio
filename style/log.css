@@ -76,6 +76,7 @@ input {
 
 
 #submit {
+    display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -97,26 +98,25 @@ input {
 }
 
 #submit:hover {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin-top: 1em;
-    width: 230px;
-    height: 40px;
-    border-radius: 8px 8px 8px 8px;
     background: rgb(222,167,219);
     background: linear-gradient(105deg,
     rgba(222,167,219,1) 0%,
     rgb(249, 221, 232) 100%);
     border:#dea7db;
     color: #ffffff;
-    font-size: 18px;
-    font-family: 'font', sans-serif;
     transition-duration: 0.5s;
-    cursor: pointer;
     box-shadow: 0px 0.7px 2.8px rgba(86, 86, 86, 0.1);
     transition: all .5s;
-    animation: fadeIn 0.3s forwards;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 #forgot{
