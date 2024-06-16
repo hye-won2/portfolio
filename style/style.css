@@ -3358,7 +3358,7 @@ height: 40px;
     margin-top: -2px;
     width: 11em;
     margin-right: -2px;
-    z-index: 1;
+    z-index: 10;
  }   
  
    /* 교육이수내역 */
