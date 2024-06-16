@@ -2941,6 +2941,7 @@ height: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
   max-height: 20px;
+  z-index: 1;
 }
 
 
@@ -2950,6 +2951,7 @@ height: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
   max-height: 20px;
+  z-index: 1;
 }
 
 .logo-cel{
@@ -2958,6 +2960,7 @@ height: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
   max-height: 30px;
+  z-index: 1;
 }
 
 
@@ -2967,6 +2970,7 @@ height: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
   max-height: 40px;
+  z-index: 1;
 }
 
 
@@ -3354,6 +3358,7 @@ height: 40px;
     margin-top: -2px;
     width: 11em;
     margin-right: -2px;
+    z-index: 1;
  }   
  
    /* 교육이수내역 */
