@@ -2936,39 +2936,39 @@ height: 40px;
 
 /* 경력사항 로고이미지 */
 .logo-kl{
-  display: flex;
+  display: inline-block;
   justify-content:space-between;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   max-height: 20px;
   z-index: 1;
 }
 
 
 .logo-ds{
-  display: flex;
+  display: inline-block;
   justify-content:space-between;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   max-height: 20px;
   z-index: 1;
 }
 
 .logo-cel{
-  display: flex;
+  display: inline-block;
   justify-content:space-between;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   max-height: 30px;
   z-index: 1;
 }
 
 
 .logo-ts{
-  display: flex;
+  display: inline-block;
   justify-content:space-between;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   max-height: 40px;
   z-index: 1;
 }
@@ -3353,10 +3353,10 @@ height: 40px;
  
    /* 프로필사진 */
   .pro-img{
-    display: flex;
+    display: inline-flex;
     float: right;
     margin-top: -2px;
-    width: 11em;
+    width: 100%;
     margin-right: -2px;
     z-index: 10;
  }   
@@ -3462,12 +3462,11 @@ height: 40px;
    
   /* 프로필사진 */
  .pro-img{
-   display: block;
+   display: inline-flex;
    float: right;
    margin-top: -2px;
-   width: 11em;
+   width: 100%;
    margin-right: 9px;
-   content: url(/images/phw_profile.png);
  }   
   
  /* 포트폴리오 작품 타이틀명 */
@@ -4045,30 +4044,6 @@ height: 40px;
  margin: 5em;
  }
  
- /* 경력사항 로고이미지 */
- .logo-ds{
-   justify-content:space-between;
-   margin-top: 10px;
-   margin-bottom: 4px;
-   max-height: 16px;
-   content: url(/images/logo/ds.png);
- }
- 
- .logo-cel{
-   justify-content:space-between;
-   margin-top: 10px;
-   margin-bottom: 4px;
-   max-height: 25px;
-   content: url(/images/logo/cel.png);
- }
- 
- .logo-ts{
-   justify-content:space-between;
-   margin-top: 10px;
-   margin-bottom: 4px;
-   max-height: 30px;
-   content: url(/images/logo/ts.png);
- }
      }
  
  
@@ -4172,11 +4147,10 @@ height: 40px;
  
    /* 프로필사진 */
    .pro-img{
-     display: block;
+     display: inline-flex;
      float: right;
      margin-top: 5px;
-     width: 9.3em;
-     content: url(/images/phw_profile.png);
+     width: 100%;
    }
  
    
@@ -4616,30 +4590,7 @@ height: 40px;
  margin: 5em;
  }
  
- /* 경력사항 로고이미지 */
- .logo-ds{
-   justify-content:space-between;
-   margin-top: 10px;
-   margin-bottom: 4px;
-   max-height: 16px;
-   content: url(/images/logo/ds.png);
- }
- 
- .logo-cel{
-   justify-content:space-between;
-   margin-top: 10px;
-   margin-bottom: 4px;
-   max-height: 25px;
-   content: url(/images/logo/cel.png);
- }
- 
- .logo-ts{
-   justify-content:space-between;
-   margin-top: 10px;
-   margin-bottom: 4px;
-   max-height: 30px;
-   content: url(/images/logo/ts.png);
- }
+
      }
  
  
@@ -4773,11 +4724,10 @@ height: 40px;
    /* 프로필 영역*/
    /* 프로필사진 */
    .pro-img{
-     display: block;
+     display: inline-flex;
      float: right;
      margin-top: 10px;
-     width:9em;
-     content: url(/images/phw_profile.png);
+     width: 100%;
    }
  
  
@@ -5307,30 +5257,7 @@ height: 40px;
  margin: 5em;
  }
  
- /* 경력사항 로고이미지 */
- .logo-ds{
-   justify-content:space-between;
-   margin-top: 10px;
-   margin-bottom: -4px;
-   max-height: 16px;
-   content: url(/images/logo/ds.png);
- }
- 
- .logo-cel{
-   justify-content:space-between;
-   margin-top: 10px;
-   margin-bottom: -4px;
-   max-height: 25px;
-   content: url(/images/logo/cel.png);
- }
- 
- .logo-ts{
-   justify-content:space-between;
-   margin-top: 10px;
-   margin-bottom: -4px;
-   max-height: 30px;
-   content: url(/images/logo/ts.png);
- }
+
  }
  
  
@@ -5382,12 +5309,11 @@ height: 40px;
    /* 프로필 영역*/
    /* 프로필사진 */
  .pro-img{
-   display: block;
+   display: inline-flex;
    float: right;
    margin-top: 10px;
    margin-left: 0px;
-   width:8em;
-   content: url(/images/phw_profile.png);
+   width:auto;
  }
  
    .blank{
@@ -5922,31 +5848,7 @@ height: 40px;
  .blank5{
  margin: 5em;
  }
- 
- /* 경력사항 로고이미지 */
- .logo-ds{
-   justify-content:space-between;
-   margin-top: 10px;
-   margin-bottom: -4px;
-   max-height: 16px;
-   content: url(/images/logo/ds.png);
- }
- 
- .logo-cel{
-   justify-content:space-between;
-   margin-top: 10px;
-   margin-bottom: -4px;
-   max-height: 25px;
-   content: url(/images/logo/cel.png);
- }
- 
- .logo-ts{
-   justify-content:space-between;
-   margin-top: 10px;
-   margin-bottom: -4px;
-   max-height: 32px;
-   content: url(/images/logo/ts.png);
- }
+
  }
  
  
@@ -6380,30 +6282,7 @@ height: 40px;
  margin: 5em;
  }
  
- /* 경력사항 로고이미지 */
- .logo-ds{
-   justify-content:space-between;
-   margin-top: 10px;
-   margin-bottom: -4px;
-   max-height: 14px;
-   content: url(/images/logo/ds.png);
- }
- 
- .logo-cel{
-   justify-content:space-between;
-   margin-top: 10px;
-   margin-bottom: -4px;
-   max-height: 25px;
-   content: url(/images/logo/cel.png);
- }
- 
- .logo-ts{
-   justify-content:space-between;
-   margin-top: 10px;
-   margin-bottom: -4px;
-   max-height: 30px;
-   content: url(/images/logo/ts.png);
- }
+
    }
 
 
@@ -7051,11 +6930,10 @@ animation-play-state: paused;
 
 /* 프로필사진 */
 .pro-img{
-  display: block;
+  display: inline-flex;
   float: right;
   margin-top: -5px;
-  width:11.5em;
-  content: url(/images/phw_profile.png);
+  width: 45%;
 }
 
 
