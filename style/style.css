@@ -117,6 +117,13 @@ html {
   .test_obj {
     -webkit-tap-highlight-color : transparent !important;
 }
+
+.package-detail{
+  font-size: 1.1rem;
+  margin-top: 10px;
+  margin-bottom: 40px; 
+  text-align: left;
+}
   
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -1706,9 +1713,9 @@ h4 {
   width: 220px;
   height: 30px;
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 2.5px 10px rgba(0, 0, 0, 0.15);
-  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
   padding: 10px;
   -webkit-transition: all 800ms cubic-bezier(0.82, -0.02, 0.4, 1.18);
   transition: all 800ms cubic-bezier(0.82, -0.02, 0.4, 1.18);
@@ -1732,17 +1739,17 @@ h4 {
 
 .box-content .text {
   position: relative;
-  left: -32px;
+  left: -28px;
   margin-left: 2px;
 }
 
 .text .title8 {
-  margin: 0;
+  display: flex;
   padding: 0;
   font-style: normal;
   font-weight: bold;
-  margin-top: 8px;
-  line-height: 50%;
+  margin-top: 10px;
+  line-height: 25%;
   font-size: 15px;
   color: #4F4F4F;
 }
@@ -6933,6 +6940,7 @@ animation-play-state: paused;
   display: inline-flex;
   float: right;
   margin-top: -5px;
+  max-width: 170px;
   width: 45%;
 }
 
@@ -7124,7 +7132,6 @@ animation-play-state: paused;
 
 
 /* 패키지&편집&웹 */
-
 .box_wrap .txt_box4 h4:before {
   content: "";
   display: block;
