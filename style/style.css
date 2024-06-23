@@ -1978,8 +1978,6 @@ animation: fadeIn 1.5s forwards;
   /* 모든 해상도에 동일하게 로고를 보이도록 함 */
   @media only screen and (max-width: 1920px) {
     .header .logo a {
-  /* 로고 */
-  .header .logo a {
     display: block;
     width: 150px;
     height: 100px;
@@ -1987,7 +1985,6 @@ animation: fadeIn 1.5s forwards;
     margin-top: 1.6em;
     background-color: transparent;
     z-index: 10;
-  }
     }
   }
 
@@ -2003,6 +2000,7 @@ animation: fadeIn 1.5s forwards;
 .gnb > li {
   margin: 0 1em;
 }
+
 .gnb > li > a {
   display: block;
   line-height: 100px;
@@ -2013,64 +2011,68 @@ animation: fadeIn 1.5s forwards;
   font-size: 16px;
   font-weight: 200;
 }
+
 .gnb > li:hover .gnb_sub {
   transform: scaleY(100%);
   opacity: 1;
 }
 
 .gnb > li > a:hover {
-  color: rgb(198, 122, 198);
+  color: rgb(255, 255, 255);
   transition: all .3s;
   text-decoration-line: underline;
   text-decoration-thickness:4px;
   text-underline-offset : 13px;
   text-underline-position : under;
-  text-decoration-color: rgb(198, 122, 198);
+  text-decoration-color: rgb(255, 255, 255);
   animation: fadeIn 1s forwards;
 }
 
 .gnb > li > a:hover:after {
   width: 50%
+  
 }
 .gnb > li > a:hover:before {
   width: 50%
 }
+
 .gnb > li.active > a {
-  color: #b477ae;
+
 }
 
 .gnb_sub {
   flex-direction: column;
-  border: 1.9px solid rgb(198, 122, 198, 0.4);
+  /* border: 2px solid  #c673be; */
   transform: scaleY(0%);
   transform-origin: top;
   opacity: 0;
   transition: all 0.5s;
   margin-top: -25px;
-  background-color: #ffffff94;
+  background-color: #efefef;
 }
 
 .gnb_sub > li > a {
   display: block;
+  color: #444444;
   padding: 0.5em 1.2em;
+  font-weight: 200;
   text-align: center;
 }
 .gnb_sub > li > a:hover {
-  background-color: rgba(198, 122, 198, 0.4);
+  font-weight: 500;
   color: white;
 }
 .gnb_sub > li + li {
-  border-top: 1px solid #f1acac2a;
+  border-top: 1px solid #efefef;
 }
 
-.gnb li a:hover, .gnb ul li:hover a{
+/* .gnb li a:hover, .gnb ul li:hover a{
   color: #b477ae;
-  }
-
+  } */
 
   .gnb li ul a:hover, .gnb li ul li:hover a{
   display: block;
-  background-color: rgba(198, 122, 198, 0.4);
+  background-color: #d0a2cb;
   color:#ffffff;
   text-decoration:none;
   }
@@ -2079,6 +2081,7 @@ animation: fadeIn 1.5s forwards;
 /* gnb_sub 요소에 hover를 할 때에도 gnb 요소의 hover 효과를 유지 */
 .gnb > li:hover .gnb_sub, 
 .gnb_sub:hover + li:hover .gnb_sub {
+  font-weight: 500;
   transform: scaleY(100%);
   opacity: 1;
 }
@@ -2086,13 +2089,14 @@ animation: fadeIn 1.5s forwards;
 /* gnb hover 태그랑 똑같이 */
 .gnb > li:hover > a, 
 .gnb_sub:hover + li:hover > a {
-  color: rgb(198, 122, 198);
+  font-weight: 500;
+  color: #b477ae;
   transition: all .3s;
   text-decoration-line: underline;
   text-decoration-thickness:4px;
   text-underline-offset : 13px;
   text-underline-position : under;
-  text-decoration-color: rgb(198, 122, 198);
+  text-decoration-color: #b477ae;
   animation: fadeIn 1s forwards;
 }
 
@@ -2164,7 +2168,7 @@ animation: fadeIn 1.5s forwards;
                 margin: 0;
                 padding: 0;
             }
-            user agent stylesheet
+
             div {
                 display: block;
             }
@@ -2669,6 +2673,18 @@ animation: fadeIn 1.5s forwards;
   margin-top: -80px;
   margin-right: -50px;
   margin-bottom: 100px;
+}
+
+/* 상세페이지 아이콘 */
+.icon_item_detail {
+  float:left;
+  list-style:none;
+  display:inline-block;
+  border: 0px;
+  margin-left: 50px;
+  margin-top: -37px;
+  margin-right: -50px;
+  margin-bottom: 20px;
 }
 
 /* 영상쪽 아이콘 */
