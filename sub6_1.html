@@ -13,7 +13,7 @@
     <meta property="og:title" content="박혜원 포트폴리오">
     <meta property="og:type" content="website">
     <meta property="og:image" content="./images/or_img.jpg">
-    <meta property="og:description" content="시각디자인 부문">
+    <meta property="og:description" content="웹디자인 부문">
     <!-- font css -->
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
@@ -42,7 +42,7 @@
 	<script src="style/m_header.js"></script>
 
     <style>
-@import "./media/7-1_mq.css";
+  @import "./media/7-1_mq.css";
     </style>     
     
     <title>박혜원 영상 디자인</title>
@@ -51,7 +51,7 @@
 
 <body>
   <!-- header 시작 -->    
-  <div class="header">
+  <div class="header" style="background-color: transparent">
      <h1 class="logo">
          <a href="./main.html">
              <img src="./images/logo.png" width="200vh" alt="">
@@ -266,9 +266,12 @@
         <img src="./images/up-arrow-icon_push.png"
         onmouseover="this.src='./images/up-arrow-icon.png'"
         onmouseout="this.src='./images/up-arrow-icon_push.png'"
-        style="width:55px;" alt="">
+        style="width:40px;" alt="">
     </a>
 </div>
+
+    <!-- 마우스 포인트 -->
+    <div class="cursor"></div>
 </main>
 
 <!-- 스크립트 -->
@@ -278,6 +281,8 @@
 <script src="style/main_js.js"></script>
 <script src="style/scroll_section.js"></script>
 <!-- <script src="style/down_btn_scroll_ani.js"></script> -->
-
+    <!-- 마우스 포인트 -->
+    <script src="style/mouse_point.js"></script>
+    
 </body>
 </html>

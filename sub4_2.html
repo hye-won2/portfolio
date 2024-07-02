@@ -10,7 +10,7 @@
     <meta property="og:title" content="박혜원 포트폴리오">
     <meta property="og:type" content="website">
     <meta property="og:image" content="./images/or_img.jpg">
-    <meta property="og:description" content="시각디자인 부문">
+    <meta property="og:description" content="웹디자인 부문">
     <!-- font css -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" />
@@ -41,32 +41,35 @@
 
 
     <!-- 파비콘 삽입 -->
-<link rel="shortcut icon" href="./images/favicon/favicon.ico">
-<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-    
-<!--모바일 헤더메뉴-->
+    <link rel="shortcut icon" href="./images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- 파비콘 끝 -->
+
+    <!--모바일 헤더메뉴-->
 	<script src="style/m_header.js"></script>
 
-<!-- 파비콘 끝 -->
+
     <title>박혜원 온라인 디자인</title>
+
 <style>
-@import "./media/6-2_mq.css";
+    @import "./media/sub_page_container.css";
+    @import "./media/0_mq.css";
 </style>
 
 <style>
@@ -181,10 +184,10 @@ max-width: 600px;
                 <li><a href="./sub4_2.html" class="active">웹콘텐츠</a></li>
                 <li><a href="./sub4_3.html">웹홈페이지</a></li>
             </ul>
-        </div>
 
 
 
+            <div></div>
 
 
         <section class="box_wrap">
@@ -541,6 +544,7 @@ max-width: 600px;
                             <li><p class="icon_item"><img src="./images/ps_icon.png" width="28" height="28" alt=""></p></li>
                             </li></ul></div></div>
                         </section>
+                    </div>
             <!-- main 끝 -->
 
     
@@ -574,6 +578,9 @@ max-width: 600px;
             </div>
             <!-- footer 끝 -->
 
+     <!-- 마우스 포인트 -->
+    <div class="cursor"></div>
+
               <!-- Vendor JS Files -->
               <script src="assets4/vendor/purecounter/purecounter_vanilla.js"></script>
               <script src="assets4/vendor/aos/aos.js"></script>
@@ -606,36 +613,10 @@ max-width: 600px;
   <script>
   AOS.init();
   </script>
-
+  
+    <!-- 마우스 포인트 -->
+    <script src="style/mouse_point.js"></script>
     
-    <!-- <script type="text/javascript">
-        lightbox.option({
-           resizeDuration:500,
-           wrapAround: true,
-           disableScrolling: false,
-           fitImagesInViewport:false
-       })
-     </script>
-         <script type="text/javascript">
-async function fetchHtmlAsText(url) {
-    return await (await fetch(url)).text();
-}
-
-async function importPage(target) {
-    document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
-}
-importPage('slide6_2-1');
-importPage('slide6_2-2');
-importPage('slide6_2-2-2');
-importPage('slide6_2-2-3');
-importPage('slide6_2-3');
-importPage('slide6_2-3-2');
-importPage('slide6_2-4');
-importPage('slide6_2-5');
-importPage('slide6_2-6');
-importPage('slide6_2-7');
-
-</script> -->
 
 </body>
 </html>
