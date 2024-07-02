@@ -1,3 +1,36 @@
+
+@media screen and (hover: none) and ( max-width: 699px ) {
+  /* 타이틀명 */
+  .page_title3 {
+   margin: 3em 0em -0.1em;
+   margin-top: 3em;
+   font-weight: bold;
+   font-size: 2.4rem;
+   text-align: center;
+   text-transform: uppercase;
+   position: relative;
+   /* animation: fadeInUp 1s; */
+ }
+}
+
+@media screen and (hover: none) and ( min-width: 700px ) {
+  /* 타이틀명 */
+  .page_title3 {
+   margin: 3em 0em -0.1em;
+   margin-top: 3em;
+   font-weight: bold;
+   font-size: 2.8rem;
+   text-align: center;
+   text-transform: uppercase;
+   position: relative;
+   /* animation: fadeInUp 1s; */
+ }
+}
+
+
+
+
+
 @media screen and (orientation:landscape) and (min-height: 701px){
 
   
