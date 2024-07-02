@@ -1,5 +1,5 @@
 
-const content = "안녕하세요!\n시각디자이너\n박혜원 입니다.";
+const content = "안녕하세요.\n웹디자이너\n박혜원 입니다.";
 const text = document.querySelector(".text");
 let i = 0;
 
