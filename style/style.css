@@ -397,6 +397,9 @@ html, body {
             
             @media (hover: none) { 
              /* hover 불가능한 경우, 터치 가능(모바일, 태블릿) */
+             .cursor{
+              display: none;
+             }
 
              .btn_shop{
               display: none;
@@ -451,11 +454,24 @@ html, body {
               .navBox {
                 display: none;
                }
-               
-               
+              
             }
             
-    
+           /* PC 모바일 구분 */
+            @media (hover: hover) and (max-width: 1100px) {
+              /* hover 가능한 경우, 터치 불가(PC) */
+              .header {
+                top: 0px;
+                left: 0px;
+                margin-bottom: 30px;
+                margin-left: calc(0px/-2);
+                background-color: white;
+                height: 70px;
+              }
+              
+            }
+            
+
               /* 세로모드 메뉴바 */
               @media screen and (orientation:Portrait)  and (max-height: 569px) {
                 .logo img{
@@ -2495,8 +2511,9 @@ h4 {
   width: 220px;
   height: 30px;
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
+  /* box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12); */
+  border: 1px solid  #eeeeee; 
   border-radius: 15px;
   padding: 10px;
   -webkit-transition: all 800ms cubic-bezier(0.82, -0.02, 0.4, 1.18);
