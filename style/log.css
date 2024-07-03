@@ -40,7 +40,7 @@ input {
     width: 220px;
     height: 35px;
     margin-bottom: 8px;
-    border-radius: 5px 5px;
+    border-radius: 0px 0px;
     border: #e8e8e8 1px;
     background-color: #fefefe;
     padding-left: 10px;
