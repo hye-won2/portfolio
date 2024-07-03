@@ -40,7 +40,7 @@ body:before{
     border:none;
     position:relative;
     height: 40px;
-    border-radius: 5px 5px;
+    border-radius: 0px 0px;
     font-size: 18px;
     font-weight: 600;
     width: 230px;
