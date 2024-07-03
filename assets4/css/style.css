@@ -14,6 +14,13 @@
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
+@media (hover: none) { 
+  /* hover 불가능한 경우, 터치 가능(모바일, 태블릿) */
+  .cursor{
+   display: none;
+  }
+}
+
 .back-to-top {
   position: fixed;
   visibility: hidden;
