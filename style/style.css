@@ -165,7 +165,9 @@ html, body {
 }
 
 
-
+.menuWrap.on .your-animation-class {
+  animation-play-state: paused;
+}
 
 /* 최상단버튼 모바일 화면에서 안보이게 */
 @media only screen and (max-width: 768px) {
