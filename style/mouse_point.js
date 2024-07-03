@@ -29,3 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
       cursor.style.opacity = 1;
     }, 1000);
   });
+
+
+      // 터치 디바이스 감지 스크립트
+      if ('ontouchstart' in window || navigator.maxTouchPoints) {
+        document.querySelector('.cursor').style.display = 'none';
+    }
