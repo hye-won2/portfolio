@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-      // 터치 디바이스 감지 스크립트
+      // 터치 디바이스 감지 스크립트, 모바일 태블릿 마우스 커서 안보임
       if ('ontouchstart' in window || navigator.maxTouchPoints) {
         document.querySelector('.cursor').style.display = 'none';
     }
