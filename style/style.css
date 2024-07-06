@@ -253,7 +253,7 @@ html, body {
 /* 메인 */
 .main_title{
   font-size: 2.3rem;
-  margin-top:6vh;
+  /* margin-top:6vh; */
   font-weight: bold;
   letter-spacing:-0.8px;
   word-spacing:-0.5px;
@@ -471,7 +471,7 @@ html, body {
                 display: block;
                 margin:auto;
                 margin-bottom:-5vh;
-                width:28vh;
+                width:26.5vh;
               }
             }
              
@@ -1294,7 +1294,7 @@ html, body {
                   /* 메인 */
                   .main_title{
                     font-size:4vh;
-                    margin-top:2vh;
+                    margin-top: 1vh;
                     letter-spacing:-1px;
                     word-spacing:1px;
                     margin-bottom: 2%;
@@ -2582,7 +2582,7 @@ h4 {
 }
 
 .text span {
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -4375,7 +4375,7 @@ height: 40px;
         /* 메인 */
     .main_title{
       font-size: 2.2rem;
-      margin-top:6vh;
+      margin-top:2vh;
       margin-bottom: 4%;
       font-weight: bold;
     }
@@ -4896,8 +4896,8 @@ height: 40px;
  @media screen and (orientation: portrait) and (min-width: 380px) and (max-width: 410px){
    /* 메인 */
  .main_title{
-   font-size:4.4vh;
-   margin-top:6vh;
+   font-size:4.2vh;
+   margin-top:0vh;
    letter-spacing:-1px;
    word-spacing:1px;
    margin-bottom: 2%;
@@ -4912,17 +4912,14 @@ height: 40px;
  }
  
  .date{
-   font-size:2.5vh;
+   font-size:2.1vh;
    margin: 2.3vh auto;
-   letter-spacing:-1px;
-   word-spacing:1px;
  }
  
  .main_txt{
-   font-size:2.1vh;
-   color: #8e8e8e;
+   font-size:2.35vh;
    margin:-0.3vh;
-   line-height:130%;
+   line-height:140%;
    letter-spacing:-1px;
    word-spacing:1px;
  }
@@ -6119,8 +6116,10 @@ height: 40px;
  @media screen and (orientation: portrait) and (min-width: 319px) and (max-width: 349px){
 .img_box3{
   margin-top: -25%;
+  margin: auto;
 }
   
+
   /* 최상단 공통 로고 */
  .header .logo a {
    display: block;
@@ -7875,7 +7874,7 @@ animation-play-state: paused;
 
     
 .box_wrap .txt_box {
-  flex: 6;
+  flex: 5;
   font: 200 1em/1.8 "Noto Sans KR";
 }
 .box_wrap .txt_box h4:before {
