@@ -1,4 +1,161 @@
 
+@media screen and (orientation:landscape)  {
+
+    .box_wrap:nth-child(odd) .container2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: auto;
+      gap: 5vh;
+    }
+
+    .box_wrap:nth-child(odd) .container3 {
+      display: flex;
+      flex-direction: row;
+      gap: 6vh;
+    }
+
+
+    /* 메인 프로필 이미지 */
+    .img_box5{
+      display:block;
+      margin:auto;
+      margin-bottom: 2%;
+      width: 26vh;
+    }
+
+    .box_wrap .img_box5 {
+      flex: 5;
+    }
+    .box_wrap .img_box5> img {
+      width: 100%;
+    }
+
+
+    
+      /* 메인 페이지 이미지 */
+     .img_box3 img {
+     display: block;
+     margin:auto;
+     margin-top: 0vh;
+     /* margin-bottom: 10vh; */
+     width: 34vh;
+    }
+
+    /* 메인 */
+    .main_title{
+      font-size: 4vh;
+      margin-top: -3vh;
+      font-weight: bold;
+      letter-spacing:-0.8px;
+      word-spacing:-0.5px;
+    }
+
+    .main_sub{
+      font-size: 3vh;
+      margin-top: 2%;
+      line-height:10%;
+      letter-spacing:-0.8px;
+      word-spacing:-0.5px;
+    }
+
+    .date{
+      font-size: 2.3vh;
+      color: #9d9d9d;
+      margin:8% auto;
+      word-spacing:1px;
+    }
+
+    .main_txt{
+      font-size: 2.4vh;
+      color: #656565;
+      margin: -1vh 0vh 0vh 0vh;
+      line-height: 140%;
+      letter-spacing:-0.8px;
+      word-spacing:-0.5px;
+    }
+
+
+    
+    .text {
+      display: block;
+      margin-bottom: 0%;
+      height: 100%;
+    }
+
+
+    .text_box{
+      display: block;
+      padding: 0%;
+      /* height: 20vh; */
+      width: 110%;
+      letter-spacing:-0.3vh;
+      word-spacing:0vh;
+      line-height: 6vh;
+      font-weight: 600;
+      font-size: 4.4vh;
+      margin: auto;
+      margin-top: 0%;
+      margin-left: 0%;
+      text-align: left;
+      color: #a9a9a9;
+    }
+  
+    .box_wrap .txt_box3 p + p {
+    max-width: 100%;
+    margin: auto;
+    }
+    
+    .box_wrap .txt_box3 {
+    flex: 6;
+    font: 200 1em/1.8 "Noto Sans KR";
+    margin: auto;
+    text-align: left;
+    }
+
+
+    .box_wrap .txt_box3 {
+      flex: 6;
+      font: 200 1em/1.8 "Noto Sans KR";
+      margin: 0 auto;
+      padding-inline: -32px;
+      margin-top: 0em;
+    }
+    
+    .box_wrap .txt_box3 h4:before {
+      content: "";
+      display: block;
+      background-color: #b477ae;
+      width: 2.2em;
+      height: 2.5px;
+    }
+    
+    .box_wrap .txt_box3 p + p {
+      margin-top: 0em;
+    }
+    
+
+        /* 메인페이지 버튼 */
+    button{
+      background: #A576AB;
+      color:#fff;
+      border:none;
+      position:relative;
+      height: 5.3vh;
+      font-size: 2vh;
+      font-weight: 700;
+      padding:0 11vh;
+      margin-top: 0vh;
+      cursor:pointer;
+      transition:800ms ease all;
+      outline:none;
+    }
+
+    .brank {
+      margin: 10%;
+    }
+    }
+
 
 body:before{
   content:'';
@@ -9,12 +166,9 @@ body:before{
 
 
 
-.brank{
-  margin: 20%;
-}
 
 
-
+@media screen and (max-width: 1000px) {
 /* 메인페이지 버튼 */
 button{
   background: #A576AB;
@@ -28,6 +182,12 @@ button{
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
+}
+
+.brank{
+  margin: 20%;
+}
+
 }
 
 button:hover{
@@ -112,20 +272,37 @@ margin-top: 5%;
 }
 
 
+@media screen and (orientation: portrait) and (min-height: 450px) {
+      /* 메인 페이지 이미지 */
+     .img_box3 img {
+     display: block;
+     /* margin:auto; */
+     /* margin-top: 2%; */
+     margin-bottom: 0%;
+    }
+
+  }
+
+  
+
 @media screen and (orientation:landscape) and (max-height: 399px) {
   button{
     background: #A576AB;
     color:#fff;
     border:none;
     position:relative;
-    height: 25px;
-    font-size: 0.7rem;
+    height: 4vh;
+    font-size: 2vh;
     font-weight: 700;
-    padding:0 4.2em;
+    padding:0 12vh;
     cursor:pointer;
     transition:800ms ease all;
     outline:none;
     margin-top: -10%;
+  }
+
+  .brank {
+    margin: 0%;
   }
 }
 
@@ -136,15 +313,20 @@ margin-top: 5%;
     color:#fff;
     border:none;
     position:relative;
-    height: 25px;
-    font-size: 0.7rem;
+    height: 4vh;
+    font-size: 2vh;
     font-weight: 700;
-    padding:0 4.2em;
+    padding:0 12vh;
     cursor:pointer;
     transition:800ms ease all;
     outline:none;
     margin-top: -10%;
   }
+
+  .brank {
+    margin: 0%;
+  }
+
 }
 
 
@@ -165,7 +347,13 @@ margin-top: 5%;
       transition:800ms ease all;
       outline:none;
     }
+
+    .brank {
+      margin: 20%;
+    }
      }
+
+
 
 
 
