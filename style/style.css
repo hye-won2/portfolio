@@ -7868,7 +7868,7 @@ animation-play-state: paused;
   flex: 4;
   max-width: 100%;
   justify-content: center;
-  margin-top: -2em;
+  margin-top: 0em;
 }
 
     
@@ -8028,9 +8028,8 @@ animation-play-state: paused;
 /* 영상탭 */
 .box_wrap .txt_box7 {
   font: 200 1em/1.8 "Noto Sans KR";
-  /* margin: -3em auto; */
   padding-inline: -32px;
-  margin-top: 4vh;
+  margin-top: 0vh;
   margin-left: 0vh;
   padding: 0%;
 }
@@ -8038,9 +8037,9 @@ animation-play-state: paused;
 
 .box_wrap .txt_box7 h4:before {
   content: "";
-  display: block;
+  /* display: block; */
   background-color: #b477ae;
-  margin-bottom: 0.5em;
+  margin-bottom: 0em;
   width: 2.2em;
   height: 2.5px;
 }
