@@ -1,0 +1,191 @@
+/* .stars{
+    -ms-overflow-style: none;
+    overflow: hidden;
+} */
+
+.page_title {
+    margin-top: 22%;
+    font-weight: 600;
+    font-size: 2.5em;
+    line-height: 41px;
+    text-align: center;
+    text-transform: uppercase;
+     }
+
+/* .pinkbox {
+    position: relative;
+    margin: 7em auto;
+    display: inline-block;
+    align-items: center;       
+    background: rgba(255, 255, 255, 0.2);
+    width: 240px;
+    height: 415px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.1);
+} */
+
+h1 {
+    font-family: 'font', sans-serif;
+    font-size: 18px;
+    color: rgb(255, 144, 176);
+    }
+
+html {
+    text-align: center;
+    }
+    
+input {
+    margin-top: 12px;
+    width: 220px;
+    height: 35px;
+    margin-bottom: 8px;
+    border-radius: 0px 0px;
+    border: #e8e8e8 1px;
+    background-color: #fefefe;
+    padding-left: 10px;
+    color: rgb(158, 158, 158);
+    z-index: 200;
+}
+
+
+
+input:focus {
+    /* border: 1px solid #d669d1; */
+    box-shadow: inset 0 0 0 1.4px #d669d1;
+    outline: none;
+}
+
+
+#id_ {
+    font-size: 13px;
+}
+
+#pass_ {
+    font-size: 13px;
+}
+
+.id_form{
+    display: inline-block;
+    color:#dea7db;
+    font-weight: 600;
+    margin-right: 0%;
+    margin-bottom: 3vh;
+    line-height: 10%;
+    text-align: left;
+}
+.pw_form{
+    display: inline-block;
+    color:#dea7db;
+    font-weight: 600;
+    margin-right: 0%;
+    margin-bottom: 0.3vh;
+    line-height: 10%;
+    text-align: left;
+}
+
+
+/* #submit {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 1em;
+    width: 230px;
+    height: 40px;
+    border-radius: 8px 8px 8px 8px;
+    background: rgb(222,167,219);
+    background: linear-gradient(15deg,
+    rgba(222,167,219,1) 20%,
+    rgba(255,221,237,1) 100%);
+    border:#dea7db;
+    color: #fffffff3;
+    font-size: 18px;
+    font-family: 'font', sans-serif;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    box-shadow: 0px 0.7px 2.8px rgba(86, 86, 86, 0.1);
+}
+
+#submit:hover {
+    background: rgb(222,167,219);
+    background: linear-gradient(105deg,
+    rgba(222,167,219,1) 0%,
+    rgb(249, 221, 232) 100%);
+    border:#dea7db;
+    color: #ffffff;
+    transition-duration: 0.5s;
+    box-shadow: 0px 0.7px 2.8px rgba(86, 86, 86, 0.1);
+    transition: all .5s;
+    animation: fadeIn 1.5s forwards;
+} */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#forgot{
+    text-align: center;
+    margin-top: 29px;
+    border:transparent;
+    font-size: 13px;
+    color: rgb(133, 133, 133);
+    background-color:transparent;
+    font-family: 'font', sans-serif;
+    cursor: pointer;
+}
+
+    /* 비밀번호찾기 */
+.btn {
+display: inline-block;
+cursor: pointer;
+margin-top: 2em;
+padding: 0.4em 2em;
+
+border-radius: 30px 30px;
+border-width: 0.7px;
+border-color: transparent;
+background-color: transparent;
+font-size: 13px;
+font-weight: 100;
+color:rgb(138, 138, 138);
+}
+
+.btn:hover {
+cursor: pointer;
+display: inline-block;
+margin-top: 2em;
+padding: 0.4em 2em;
+border-style: solid;
+border-radius: 30px 30px;
+border-width: 0.7px;
+border-color: transparent;
+background-color: transparent;
+font-size: 13px;
+font-weight: 100;
+color:rgb(138, 138, 138);
+}
+
+
+@keyframes fadeInUp {
+0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+}
+to {
+    opacity: 1;
+    transform: translateZ(0);
+}
+}
+
+.main {
+position: relative;
+animation: fadeInUp 1s;
+margin-top: 10em;
+margin-bottom: 2em;
+}
