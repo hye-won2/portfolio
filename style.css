@@ -1,0 +1,1699 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+
+
+body {
+  font-family: 'Pretendard', sans-serif;
+}
+
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+overflow-y: auto;   /* 콘텐츠가 넘칠 때만 세로 스크롤 생성 */
+  overflow-x: hidden; /* 가로 스크롤은 여전히 차단 */
+}
+
+
+
+
+.container {
+  /* height: 100vh; <- 이 줄을 삭제하거나 아래처럼 auto로 변경 */
+  height: auto;
+  min-height: 100vh; /* 최소 화면 높이는 유지하되, 내용에 따라 늘어남 */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 30px;
+  font-size: 18px;
+  color: #555;
+  z-index: 1; /* header는 main-section 위로 */
+  position: relative;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.logo img {
+  height: 60px; /* 적당한 높이로 조정 */
+  width: auto;
+  object-fit: contain;
+}
+
+
+.main-section {
+display: flex;
+  justify-content: center; /* 좌우 중앙 */
+  align-items: flex-end;    /* 캐릭터는 여전히 메뉴 위에 발을 붙여야 함 */
+  width: 100%;
+  max-width: 1200px;
+  padding: 0;             /* 패딩 초기화 */
+  margin: 0 auto;
+  box-sizing: border-box;
+  }
+
+.left {
+  flex: 1;
+  padding-right: 20px;
+  margin: 15% 5%;
+}
+
+.right-background {
+  position: fixed; /* 화면의 오른쪽에 고정 */
+  top: 0;
+  right: 0;
+  width: 35%;
+  height: 100vh; /* 세로 100%로 화면 꽉 차게 */
+  /* background: #D4B5F5; 백그라운드 1 */
+  background: #D4B5F5; /* 백그라운드 2 */
+  z-index: -10; /* 다른 요소 뒤로 보내기 */
+}
+
+.bubble {
+  display: inline-block;
+  /* background-color: #C9A7F5; */
+  background-color: #5B89F0;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+
+.bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: 12px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  /* border-top: 12px solid #C9A7F5; */
+  border-top: 12px solid  #5B89F0;
+}
+
+
+
+
+h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+/* here 버튼
+.btn {
+  display: inline-block;
+  background-color: #5B89F0;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 40px;
+}
+*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+.wrapper {
+  display: flex;
+/*  justify-content: center; */
+}
+
+
+
+.content-wrapper {
+flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* 기존 flex-end에서 center로 변경 */
+  justify-content: center; 
+  align-items: center;
+  width: 100%;
+}
+
+
+
+.cta {
+    margin-top: 4%;
+    display: flex;
+    padding: 10px 40px;
+    text-decoration: none;
+   /* font-family: 'Poppins', sans-serif;*/
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    border-radius: 30px;
+    background: #5B89F0;
+    transition: 1s;
+}
+
+.cta:focus {
+   outline: none; 
+}
+
+
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: -10px;
+}
+
+.cta:hover  span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 20px;
+}
+
+
+  span:nth-child(2) {
+    width: 20px;
+    margin-left: 15px;
+    position: relative;
+    top: 16%;
+  }
+  
+/**************SVG****************/
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: #c9a7f5;
+    }
+    100% {
+        fill: white;
+    }
+}
+
+
+
+
+
+.typing-text {
+  font-size: 28px; /* 기존 24px → 28px로 살짝 키움 */
+  line-height: 1.5; /* 줄 간격도 여유 있게 */
+  min-height: 3.6em; /* 두 줄 높이 확보 */
+  margin: 0;
+}
+
+
+
+.right {
+flex: 1;
+  position: relative;
+  text-align: center;
+  padding: 0; /* 상하 패딩 제거하여 바닥 밀착 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* 내부 아이템을 아래로 정렬 */
+  align-items: center;
+}
+
+
+.profile-img-wrapper {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  overflow: visible; /* 필수 */
+}
+
+
+
+.profile-img {
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0;
+  width: 30vw;
+  height: auto;
+  max-width: 350px;
+  border-radius: 10px;
+  margin: 1%;
+  margin-top: -10px;
+  margin-bottom: 0;
+  position: relative;
+  filter: drop-shadow(20px 20px 20px rgba(0,0,0,0.25));
+  z-index: 1; /* 그림자보다 위로 */
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* 살짝 밑에서 올라오는 느낌 추가 */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.icon {
+  position: absolute;
+  z-index: 9999; /* 항상 최상단에 보이도록 */
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  opacity: 0.9;
+  pointer-events: none; /* 클릭 방해 안 하도록 */
+}
+
+/* 🎥 icon-video - 우측 상단 */
+.icon-code {
+  width: 80px;
+  top: 40px;
+  right: 80px;
+  animation: floatVideo 4s ease-in-out infinite;
+  transform: rotate(-8deg);
+}
+
+/* 👨‍💻 icon-code - 좌측 상단 */
+.icon-video {
+  width: 90px;
+  top: 60px;
+  left: 40px;
+  animation: floatCode 5s ease-in-out infinite;
+  transform: rotate(6deg);
+}
+
+/* 🎨 icon-paint - 우측 하단 */
+.icon-paint {
+  width: 90px;
+  top: 55%;
+  right: 80px;
+  animation: floatPaint 6s ease-in-out infinite;
+  transform: rotate(-12deg);
+}
+
+/* 🧩 icon-ui - 좌측 하단 */
+.icon-ui {
+  width: 80px;
+  top: 60%;
+  left: 40px;
+  animation: floatUI 4.5s ease-in-out infinite;
+  transform: rotate(10deg);
+}
+
+@keyframes floatVideo {
+  0%, 100% { transform: translateY(0) rotate(6deg); }
+  50% { transform: translateY(-25px) rotate(8deg); }
+  
+}
+
+@keyframes floatCode {
+  0%, 100% { transform: translateY(0) rotate(-12deg); }
+  50% { transform: translateY(-12px) rotate(-10deg); }
+}
+
+@keyframes floatPaint {
+  0%, 100% { transform: translateY(0) rotate(10deg); }
+  50% { transform: translateY(-20px) rotate(12deg); }
+}
+
+@keyframes floatUI {
+  0%, 100% { transform: translateY(0) rotate(6deg); }
+  50% { transform: translateY(-25px) rotate(8deg); }
+}
+
+
+/* .skills {
+    flex-shrink: 0;
+    margin: 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    background: #fff;
+    padding: 50px 0;
+    font-size: 22px;
+    font-weight: 500;
+    border-top: 1px solid #eee;
+    border-radius: 100px 100px;
+    margin-top: -10%;
+    margin-bottom: 100px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    z-index: 0;
+  } */
+
+.skills {
+display: flex;
+  justify-content: center;
+  gap: 15%;
+  background: #fff;
+  padding: 50px 40px;
+  font-size: 22px;
+  font-weight: 500;
+  border-top: 1px solid #eee;
+  border-radius: 100px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  /* 수정된 부분 */
+  margin-top: -60px;   /* % 대신 px을 사용하여 캐릭터와 메뉴의 겹침 정도를 고정 */
+  margin-bottom: 50px; /* 하단 여백 최적화 */
+  width: calc(100% - 60px);
+  align-self: center;
+  z-index: 10;         /* 캐릭터보다 위 혹은 아래로 조절 (이미지 상황에 따라) */
+  box-sizing: border-box;
+}
+
+
+
+
+
+.btn_skills {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500; /* 기본은 보통 굵기 */
+  transition: transform 0.2s ease, color 0.2s ease, font-weight 0.2s ease;
+  display: inline-block;
+}
+
+.btn_skills:hover {
+ /*  color: #C9A7F5; */ 
+  font-weight: 700;  /* 살짝 굵게 (bold 대신) */
+  transform: scale(1.2); /* 살짝 커짐 */
+}
+
+
+
+
+/* 기존 스타일을 유지하면서 main-section과 skills를 함께 묶기 위한 그룹 */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 필요 시 padding 조정 */
+.main-section {
+ display: flex;
+  justify-content: space-around; /* 요소들 사이 간격을 균등하게 */
+  align-items: flex-end;         /* 캐릭터가 메뉴에 붙어있게 유지 */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .main-section {
+    flex-direction: column; /* 가로 배열을 세로 배열로 변경 */
+    align-items: center;    /* 모든 요소를 가로축 중앙 정렬 */
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .left {
+    margin: 0 0 30px 0;     /* 텍스트 하단 여백만 남기고 중앙 배치 */
+    padding: 0;
+    width: 100%;
+    order: 1;               /* 텍스트가 위로 */
+  }
+
+  .right {
+    width: 100%;
+    order: 2;               /* 캐릭터가 아래로 */
+    padding: 0;
+  }
+
+  .profile-img {
+    width: 50vw;            /* 모바일 화면에 맞게 이미지 크기 조절 */
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .skills {
+    margin-top: -30px;      /* 모바일에서도 캐릭터와 살짝 겹치게 유지 */
+    width: 90%;
+    order: 3;               /* 메뉴가 맨 아래 */
+  }
+}
+
+
+
+@media screen and (orientation: landscape) and (max-width: 1024px) {
+  html, body {
+    height: auto !important;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+  }
+
+  .container {
+    min-height: auto;
+    height: auto;
+  }
+
+  .main-section {
+    padding-bottom: 100px; /* 하단 공간 확보 */
+  }
+
+  .main-section::after {
+    bottom: 0;
+  }
+}
+
+
+
+@media screen and (max-height: 200px) {
+    body, html {
+      overflow: hidden;
+    }
+
+  .content-wrapper{
+    margin-top: -10%;
+  }
+  
+  .profile-img {
+    width: 32vw;
+    max-width: 350px;
+  }
+
+.skills {
+  margin-bottom: 50px; /* 하단 여백 */
+  width: calc(100% - 60px); /* 좌우 총 60px 여백 확보 */
+}
+
+  .left {
+    margin-top: 15%;
+  }
+
+
+  .right-background {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 160px; /* 원하는 높이만큼 조정 */
+    background: #D4B5F5;
+    transform: skewY(-4deg);  /* 기울임 */
+    transform-origin: bottom right;
+    z-index: -1;
+  }
+
+
+}
+
+
+
+@media screen and (min-width: 201px) and (max-width: 300px)  {
+
+  body, html {
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #fff; /* 전체 배경은 흰색 유지 */
+    position: relative;
+  }
+
+
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+  }
+
+
+  /* 로고 숨기기 */
+  .logo {
+    display: none;
+  }
+
+
+    /* 메인 섹션 */
+  .main-section {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+
+  
+  /* 여기서 사선을 .main-section의 배경으로 소화 */
+  .main-section::after {
+    content: "";
+    position: absolute;
+    bottom: -50%; /* 메인 아래로 뻗어나오도록 */
+    left: 0;
+    width: 100%;
+    height: 60%; /* 조절 가능 */
+    background: #D4B5F5;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    z-index: -1;
+  }
+
+  /* left 영역 내부 전체 가운데 정렬 */
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  /* 말풍선, 텍스트 등 내부도 통일 */
+  .bubble,
+  .typing-text,
+  .left p,
+  .left h1 {
+    text-align: center;
+  }
+
+  /* 버튼 wrapper도 중앙 정렬 */
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .cta {
+    margin-top: 15px;
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+
+  .icon {
+    width: 50px !important;
+  }
+
+  .icon-video {
+    top: 5%;
+    left: 10%;
+  }
+
+  .icon-code {
+    top: 5%;
+    right: 10%;
+  }
+
+  .icon-paint {
+    bottom: 15%;
+    right: 10%;
+    top: auto;
+  }
+
+  .icon-ui {
+    bottom: 15%;
+    left: 10%;
+    top: auto;
+  }
+
+
+  /* 프로필 이미지 중앙 정렬 */
+  .profile-img-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-img {
+    width: 50vw;
+    max-width: 200px;
+    margin: 0 auto;
+    margin-left: 30px;
+  }
+
+  .right {
+    margin-top: 20px;
+    padding: 0;
+    
+  }
+
+  
+  /* skills: 두 칸 정렬 */
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+    gap: 0;
+    width: 87%;
+    border-radius: 30px;
+  }
+
+  .skills > div {
+    width: 50%;
+    text-align: center;
+  }
+
+  .btn_skills {
+    font-size: 18px;
+    display: block;
+    padding: 5%;
+  }
+
+  .cta{
+    padding: 8px 40px;
+    margin-bottom: 20px;
+  }
+
+  .left h1 {
+    margin-top: -2px;
+    font-size: 36px;
+  }
+
+
+  /* line2의 높이를 고정하고 넘치는 텍스트를 보이지 않게 설정 */
+  .typing-text {
+    font-size: 21px;
+    line-height: 2;
+    margin: 0;
+  }
+
+  .line2 {
+    height: 1em; /* 높이 고정 */
+    overflow: hidden; /* 넘치지 않도록 숨기기 */
+    display: flex;
+    align-items: center; /* 텍스트 세로 중앙 정렬 */
+    justify-content: center; /* 텍스트 가로 중앙 정렬 */
+  }
+
+
+  .bubble {
+    margin-top: -15%;
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+}
+
+@media screen and (max-height: 400px){
+body, html {
+    overflow-y: auto !important;
+    height: auto !important;
+  }
+
+
+    .right-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px; /* 충분히 크게 */
+  background: #D4B5F5;
+  clip-path: polygon(0 50px, 100% 0%, 100% 100%, 0 100%);
+  z-index: -1;
+  }
+}
+
+
+@media screen and (min-width: 301px) and (max-width: 400px){
+  body, html {
+    overflow-y: auto;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #fff; /* 전체 배경은 흰색 유지 */
+    position: relative;
+  }
+
+
+.container {
+    background: linear-gradient(175deg, #ffffff 650px, #D4B5F5 650px);
+    background-color: #D4B5F5;
+    height: auto;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+  /* 로고 숨기기 */
+  .logo {
+    display: none;
+  }
+
+
+    /* 메인 섹션 */
+  .main-section {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+
+  
+    /* 여기서 사선을 .main-section의 배경으로 소화 */
+    .main-section::after {
+    content: "";
+    position: absolute;
+    bottom: -10%; 
+    left: -10%; 
+    width: 120%; 
+    height: 200px; /* 사선 각도를 보여줄 정도의 적당한 높이 */
+    background: #D4B5F5;
+    transform: skewY(-10deg);
+    transform-origin: top right;
+    z-index: -1;
+    box-shadow: 0 2000px 0 0 #D4B5F5; 
+  }
+
+
+      /* left 영역 내부 전체 가운데 정렬 */
+      .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+      
+        /* 말풍선, 텍스트 등 내부도 통일 */
+      .bubble, .typing-text, .left p, .left h1 {
+        text-align: center;
+      }
+      
+      /* 버튼 wrapper도 중앙 정렬 */
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .cta {
+        margin-top: 15px;
+        padding: 10px 25px;
+        font-size: 16px;
+      }
+
+      .icon
+      { width: 55px !important; }
+
+      .icon-video
+      { top: 5%;
+        left: 10%;
+      }
+
+      .icon-code
+      { top: 5%;
+        right: 10%;
+      }
+
+      .icon-paint {
+        bottom: 15%;
+        right: 10%;
+        top: auto;
+      }
+
+      .icon-ui {
+        bottom: 15%;
+        left: 10%;
+        top: auto;
+      }
+
+      /* 프로필 이미지 중앙 정렬 */
+      .profile-img-wrapper{
+        display: flex;
+        justify-content: center;
+      }
+
+      .profile-img
+      { width: 55vw;
+        max-width: 250px;
+        margin: 0 auto;
+        margin-left: 30px;
+      }
+
+      .right {
+        margin-top: 20px;
+        padding: 0;
+      }
+
+      /* skills: 두 칸 정렬 */
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 4% 0%;
+        gap: 0;
+        width: 87%;
+        border-radius: 30px;
+      }
+
+        .skills > div {
+          width: 50%;
+          text-align: center;
+        }
+
+        .btn_skills {
+          font-size: 20px;
+          display: block;
+          padding: 6%;
+        }
+        
+        .cta{
+          padding: 8px 40px;
+          margin-bottom: 20px;
+        }
+
+        .left h1 {
+          margin-top: -2px;
+          font-size: 38px;
+        }
+
+        /* line2의 높이를 고정하고 넘치는 텍스트를 보이지 않게 설정 */
+        .typing-text {
+          font-size: 22px;
+          line-height: 2;
+          margin: 0;
+        }
+
+        .line2 {
+          height: 1em;/* 높이 고정 */
+          overflow: hidden;/* 넘치지 않도록 숨기기 */
+          display: flex;
+          align-items: center;/* 텍스트 세로 중앙 정렬 */
+          justify-content: center; /* 텍스트 가로 중앙 정렬 */
+        }
+
+    .bubble {
+      margin-top: 2vh;
+      font-size: 14px;
+      padding: 8px 14px; }
+    }
+
+
+
+@media screen and (min-width: 401px) and (max-width: 500px)  {
+  body, html {
+    overflow-y: auto;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #fff; /* 전체 배경은 흰색 유지 */
+    position: relative;
+  }
+
+
+.container {
+    background: linear-gradient(175deg, #ffffff 650px, #D4B5F5 650px);
+    background-color: #D4B5F5;
+    height: auto;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+  /* 로고 숨기기 */
+  .logo {
+    display: none;
+  }
+
+
+    /* 메인 섹션 */
+  .main-section {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+
+  
+    /* 여기서 사선을 .main-section의 배경으로 소화 */
+    .main-section::after {
+    content: "";
+    position: absolute;
+    bottom: -10%; 
+    left: -10%; 
+    width: 120%; 
+    height: 200px; /* 사선 각도를 보여줄 정도의 적당한 높이 */
+    background: #D4B5F5;
+    transform: skewY(-10deg);
+    transform-origin: top right;
+    z-index: -1;
+    box-shadow: 0 2000px 0 0 #D4B5F5; 
+  }
+
+
+  /* left 영역 내부 전체 가운데 정렬 */
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  /* 말풍선, 텍스트 등 내부도 통일 */
+  .bubble,
+  .typing-text,
+  .left p,
+  .left h1 {
+    text-align: center;
+  }
+
+  /* 버튼 wrapper도 중앙 정렬 */
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .cta {
+    margin-top: 15px;
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+
+  .icon {
+    width: 60px !important;
+  }
+
+  .icon-video {
+    top: 5%;
+    left: 10%;
+  }
+
+  .icon-code {
+    top: 5%;
+    right: 10%;
+  }
+
+  .icon-paint {
+    bottom: 15%;
+    right: 10%;
+    top: auto;
+  }
+
+  .icon-ui {
+    bottom: 15%;
+    left: 10%;
+    top: auto;
+  }
+
+
+  /* 프로필 이미지 중앙 정렬 */
+  .profile-img-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-img {
+    width: 60vw;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-left: 30px;
+  }
+
+  .right {
+    margin-top: 20px;
+    padding: 0;
+    
+  }
+
+  
+  /* skills: 두 칸 정렬 */
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0px;
+    gap: 0;
+    width: 87%;
+    border-radius: 30px;
+  }
+
+  .skills > div {
+    width: 50%;
+    text-align: center;
+  }
+
+  .btn_skills {
+    font-size: 20px;
+    display: block;
+    padding: 6%;
+  }
+
+  .cta{
+    padding: 8px 40px;
+    margin-bottom: 20px;
+  }
+
+  .left h1 {
+    margin-top: -2px;
+    font-size: 40px;
+  }
+
+
+  /* line2의 높이를 고정하고 넘치는 텍스트를 보이지 않게 설정 */
+  .typing-text {
+    font-size: 25px;
+    line-height: 1.8;
+    margin: 0;
+  }
+
+  .line2 {
+    height: 1em; /* 높이 고정 */
+    overflow: hidden; /* 넘치지 않도록 숨기기 */
+    display: flex;
+    align-items: center; /* 텍스트 세로 중앙 정렬 */
+    justify-content: center; /* 텍스트 가로 중앙 정렬 */
+  }
+
+
+  .bubble {
+    margin-top: 2vh;
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
+
+
+
+@media all and (min-width: 501px) and (max-width: 700px) {
+  body, html {
+    overflow-y: auto;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #fff; /* 전체 배경은 흰색 유지 */
+    position: relative;
+  }
+
+
+.container {
+    background: linear-gradient(175deg, #ffffff 650px, #D4B5F5 650px);
+    background-color: #D4B5F5;
+    height: auto;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+  /* 로고 숨기기 */
+  .logo {
+    display: none;
+  }
+
+
+    /* 메인 섹션 */
+  .main-section {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+
+  
+    /* 여기서 사선을 .main-section의 배경으로 소화 */
+    .main-section::after {
+    content: "";
+    position: absolute;
+    bottom: -10%; 
+    left: -10%; 
+    width: 120%; 
+    height: 200px; /* 사선 각도를 보여줄 정도의 적당한 높이 */
+    background: #D4B5F5;
+    transform: skewY(-10deg);
+    transform-origin: top right;
+    z-index: -1;
+    box-shadow: 0 2000px 0 0 #D4B5F5; 
+  }
+
+  /* left 영역 내부 전체 가운데 정렬 */
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  /* 말풍선, 텍스트 등 내부도 통일 */
+  .bubble,
+  .typing-text,
+  .left p,
+  .left h1 {
+    text-align: center;
+  }
+
+  /* 버튼 wrapper도 중앙 정렬 */
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .cta {
+    margin-top: 15px;
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+
+  .icon {
+    width: 70px !important;
+  }
+
+  .icon-video {
+    top: 5%;
+    left: 10%;
+  }
+
+  .icon-code {
+    top: 5%;
+    right: 10%;
+  }
+
+  .icon-paint {
+    bottom: 15%;
+    right: 10%;
+    top: auto;
+  }
+
+  .icon-ui {
+    bottom: 15%;
+    left: 10%;
+    top: auto;
+  }
+
+
+  /* 프로필 이미지 중앙 정렬 */
+  .profile-img-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-img {
+    width: 52vw;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-left: 30px;
+  }
+
+  .right {
+    margin-top: 20px;
+    padding: 0;
+    
+  }
+
+  
+  /* skills: 두 칸 정렬 */
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0px;
+    gap: 0;
+    width: 87%;
+    border-radius: 30px;
+  }
+
+  .skills > div {
+    width: 45%;
+    margin: 8px;
+    text-align: center;
+  }
+
+  .btn_skills {
+    font-size: 2.5vh;
+    display: block;
+    padding: 2%;
+  }
+
+  .cta{
+    padding: 8px 40px;
+    margin-bottom: 20px;
+  }
+
+  .left h1 {
+    margin-top: -1%;
+    font-size: 4.5vh;
+  }
+
+
+  /* line2의 높이를 고정하고 넘치는 텍스트를 보이지 않게 설정 */
+  .typing-text {
+    font-size: 3vh;
+    line-height: 2;
+    margin: 0;
+  }
+
+  .line2 {
+    height: 1em; /* 높이 고정 */
+    overflow: hidden; /* 넘치지 않도록 숨기기 */
+    display: flex;
+    align-items: center; /* 텍스트 세로 중앙 정렬 */
+    justify-content: center; /* 텍스트 가로 중앙 정렬 */
+  }
+
+
+  .bubble {
+    font-size: 1.8vh;
+    padding: 8px 14px;
+    margin-top: -2%;
+  }
+}
+
+
+
+@media all and (min-width: 701px) and (max-width: 1000px) {
+  body, html {
+    overflow-y: auto;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #fff; /* 전체 배경은 흰색 유지 */
+    position: relative;
+  }
+
+
+.container {
+    background: linear-gradient(175deg, #ffffff 650px, #D4B5F5 650px);
+    background-color: #D4B5F5;
+    height: auto;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+  /* 로고 숨기기 */
+  .logo {
+    display: none;
+  }
+
+
+    /* 메인 섹션 */
+  .main-section {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+
+  
+    /* 여기서 사선을 .main-section의 배경으로 소화 */
+    .main-section::after {
+    content: "";
+    position: absolute;
+    bottom: -10%; 
+    left: -10%; 
+    width: 120%; 
+    height: 200px; /* 사선 각도를 보여줄 정도의 적당한 높이 */
+    background: #D4B5F5;
+    transform: skewY(-10deg);
+    transform-origin: top right;
+    z-index: -1;
+    box-shadow: 0 2000px 0 0 #D4B5F5; 
+  }
+
+  /* left 영역 내부 전체 가운데 정렬 */
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  /* 말풍선, 텍스트 등 내부도 통일 */
+  .bubble,
+  .typing-text,
+  .left p,
+  .left h1 {
+    text-align: center;
+  }
+
+  /* 버튼 wrapper도 중앙 정렬 */
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .cta {
+    margin-top: 15px;
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+
+  .icon {
+    width: 80px !important;
+  }
+
+  .icon-video {
+    top: 5%;
+    left: 10%;
+  }
+
+  .icon-code {
+    top: 5%;
+    right: 10%;
+  }
+
+  .icon-paint {
+    bottom: 15%;
+    right: 10%;
+    top: auto;
+  }
+
+  .icon-ui {
+    bottom: 15%;
+    left: 10%;
+    top: auto;
+  }
+
+
+  /* 프로필 이미지 중앙 정렬 */
+  .profile-img-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-img {
+    width: 60vw;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-left: 30px;
+  }
+
+  .right {
+    margin-top: 20px;
+    padding: 0;
+    
+  }
+
+  
+  /* skills: 두 칸 정렬 */
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0px;
+    gap: 0;
+    width: 87%;
+    border-radius: 30px;
+  }
+
+  .skills > div {
+    width: 45%;
+    margin: 8px;
+    text-align: center;
+  }
+
+  .btn_skills {
+    font-size: 2.4vh;
+    display: block;
+    padding: 2%;
+  }
+
+  .cta{
+    padding: 8px 40px;
+    margin-bottom: 20px;
+  }
+
+  .left h1 {
+    font-size: 5.4vh;
+    margin-top: -2px;
+  }
+
+
+  /* line2의 높이를 고정하고 넘치는 텍스트를 보이지 않게 설정 */
+  .typing-text {
+    font-size: 3vh;
+    line-height: 2;
+    margin: 0;
+  }
+
+  .line2 {
+    height: 1em; /* 높이 고정 */
+    overflow: hidden; /* 넘치지 않도록 숨기기 */
+    display: flex;
+    align-items: center; /* 텍스트 세로 중앙 정렬 */
+    justify-content: center; /* 텍스트 가로 중앙 정렬 */
+  }
+
+
+  .bubble {
+    font-size: 1.7vh;
+    padding: 8px 14px;
+    margin-top: -5%;
+  }
+}
+
+
+
+@media all and (orientation: portrait) and (min-width: 1001px) and (max-width: 1400px) {
+  body, html {
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #fff; /* 전체 배경은 흰색 유지 */
+    position: relative;
+  }
+
+
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+  }
+
+
+  /* 로고 숨기기 */
+  .logo {
+    display: none;
+  }
+
+
+    /* 메인 섹션 */
+  .main-section {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+
+  
+  /* 여기서 사선을 .main-section의 배경으로 소화 */
+  .main-section::after {
+    content: "";
+    position: absolute;
+    bottom: -50%; /* 메인 아래로 뻗어나오도록 */
+    left: 0;
+    width: 100%;
+    height: 60%; /* 조절 가능 */
+    background: #D4B5F5;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    z-index: -1;
+  }
+
+  /* left 영역 내부 전체 가운데 정렬 */
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  /* 말풍선, 텍스트 등 내부도 통일 */
+  .bubble,
+  .typing-text,
+  .left p,
+  .left h1 {
+    text-align: center;
+  }
+
+  /* 버튼 wrapper도 중앙 정렬 */
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .cta {
+    margin-top: 15px;
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+
+  .icon {
+    width: 100px !important;
+  }
+
+  .icon-video {
+    top: 5%;
+    left: 10%;
+  }
+
+  .icon-code {
+    top: 5%;
+    right: 10%;
+  }
+
+  .icon-paint {
+    bottom: 15%;
+    right: 10%;
+    top: auto;
+  }
+
+  .icon-ui {
+    bottom: 15%;
+    left: 10%;
+    top: auto;
+  }
+
+
+  /* 프로필 이미지 중앙 정렬 */
+  .profile-img-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-img {
+    width: 80vw;
+    max-width: 430px;
+    margin: 0 auto;
+    margin-left: 30px;
+  }
+
+  .right {
+    margin-top: 20px;
+    padding: 0;
+    
+  }
+
+  
+  /* skills: 두 칸 정렬 */
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0px;
+    gap: 0;
+    width: 87%;
+    border-radius: 30px;
+  }
+
+  .skills > div {
+    width: 45%;
+    margin: 8px;
+    text-align: center;
+  }
+
+  .btn_skills {
+    font-size: 32px;
+    display: block;
+    padding: 2%;
+  }
+
+  .cta{
+    padding: 8px 40px;
+    margin-bottom: 20px;
+  }
+
+  .left h1 {
+    margin-top: -2px;
+    font-size: 70px;
+  }
+
+
+  /* line2의 높이를 고정하고 넘치는 텍스트를 보이지 않게 설정 */
+  .typing-text {
+    font-size: 42px;
+    line-height: 2;
+    margin: 0;
+  }
+
+  .line2 {
+    height: 1em; /* 높이 고정 */
+    overflow: hidden; /* 넘치지 않도록 숨기기 */
+    display: flex;
+    align-items: center; /* 텍스트 세로 중앙 정렬 */
+    justify-content: center; /* 텍스트 가로 중앙 정렬 */
+  }
+
+
+  .bubble {
+    font-size: 24px;
+    padding: 8px 14px;
+  }
+}

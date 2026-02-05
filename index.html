@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>박혜원 포트폴리오</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style/index.desktop.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 공유 -->
+  <meta property="og:url" content="https://hye-won2.github.io/portfolio">
+  <meta property="og:title" content="박혜원 포트폴리오">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./images/or_img.jpg">
+  <meta property="og:description" content="웹디자인 부문">
+
+
+  <!-- 파비콘 삽입 -->
+    <link rel="shortcut icon" href="./images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+<!-- 파비콘 끝 -->
+
+
+
+
+
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a href="./index.html">
+        <!-- <img src="images/logo.png" alt="박혜원 포트폴리오 로고"> -->
+        </a>
+      </div>
+    </header>
+
+
+<div class="content-wrapper">
+    <main class="main-section">
+      <div class="left">
+        <span class="bubble">by Hye Won</span>
+        <h1>Web Portfolio</h1>
+        <div class="typing-wrapper">
+      <p class="typing-text">
+        <span class="line1"></span><br>
+        <span class="line2"></span>
+      </p>
+
+
+      </div>
+    </div>
+      <div class="right">
+        <div class="profile-img-wrapper">
+        <div class="profile-shadow"></div>
+        <img src="images/profile.gif" alt="Animated Profile" class="profile-img">
+        </div>
+        <img src="images/icon_video.png" class="icon icon-video" alt="Video Icon">
+        <img src="images/icon_code.png" class="icon icon-code" alt="Code Icon">
+        <img src="images/icon_paint.png" class="icon icon-paint" alt="Paint Icon">
+        <img src="images/icon_ui.png" class="icon icon-ui" alt="UI Icon">
+      </div>
+    </main>
+
+    <footer class="skills">
+      <div><a href="./sub0.html" class="btn_skills">자기소개</a></div>
+      <div><a href="./sub4_1.html" class="btn_skills">온라인 디자인</a></div>
+      <div><a href="./sub5_1.html" class="btn_skills">오프라인 디자인</a></div>
+      <div><a href="./sub5_1.html" class="btn_skills">영상 디자인</a></div>
+    </footer>
+  </div>
+  </div>
+
+  
+  <!-- right-background 클래스를 추가하여 백그라운드 색상 영역을 맨 오른쪽에 고정 -->
+  <div class="right-background"></div>
+
+  
+    <script>
+    const line1 = "안녕하세요😊";
+    const line2Parts = [
+      { text: "웹디자이너 ", bold: false },
+      { text: "박혜원", bold: true },
+      { text: "입니다", bold: false }
+    ];
+
+    const line1Target = document.querySelector(".line1");
+    const line2Target = document.querySelector(".line2");
+    const typingSpeed = 100;
+
+    let i = 0;
+    let currentPart = 0;
+    let currentChar = 0;
+
+    function typeLine1() {
+      if (i < line1.length) {
+        line1Target.textContent += line1[i];
+        i++;
+        setTimeout(typeLine1, typingSpeed);
+      } else {
+        setTimeout(typeLine2, 300); // 살짝 쉬고 다음 줄 타이핑
+      }
+    }
+
+    function typeLine2() {
+      if (currentPart >= line2Parts.length) return;
+
+      const part = line2Parts[currentPart];
+      let span;
+
+      // 현재 파트의 엘리먼트를 준비
+      if (part.bold) {
+        span = line2Target.querySelector("strong");
+        if (!span) {
+          span = document.createElement("strong");
+          line2Target.appendChild(span);
+        }
+      } else {
+        span = line2Target.querySelector(`.part-${currentPart}`);
+        if (!span) {
+          span = document.createElement("span");
+          span.className = `part-${currentPart}`;
+          line2Target.appendChild(span);
+        }
+      }
+
+      // 글자 한 자씩 추가
+      if (currentChar < part.text.length) {
+        span.textContent += part.text[currentChar];
+        currentChar++;
+        setTimeout(typeLine2, typingSpeed);
+      } else {
+        currentChar = 0;
+        currentPart++;
+        setTimeout(typeLine2, typingSpeed);
+      }
+    }
+
+    window.onload = typeLine1;
+
+    </script>
+
+
+    <script src="profile.js"></script>
+</body>
+
+</html>
+
+
