@@ -242,7 +242,7 @@ path.two {
 
 
 .right {
-flex: 1;
+  flex: 1;
   position: relative;
   text-align: center;
   padding: 0; /* 상하 패딩 제거하여 바닥 밀착 */
@@ -251,6 +251,7 @@ flex: 1;
   justify-content: flex-end; /* 내부 아이템을 아래로 정렬 */
   align-items: center;
 }
+
 
 
 .profile-img-wrapper {
@@ -265,14 +266,16 @@ flex: 1;
 .profile-img {
   animation: fadeIn 1s ease-out forwards;
   opacity: 0;
-  width: 30vw;
+  width: 50vw;
   height: auto;
-  max-width: 350px;
+  max-width: 400px;
   border-radius: 10px;
   margin: 1%;
   margin-top: -10px;
+  margin-left: -50px;
   margin-bottom: 0;
   position: relative;
+  
   filter: drop-shadow(20px 20px 20px rgba(0,0,0,0.25));
   z-index: 1; /* 그림자보다 위로 */
 }
@@ -290,8 +293,22 @@ flex: 1;
 }
 
 
+/* 아이콘 공통 설정 */
+.profile-img-wrapper .icon {
+  position: absolute;
+  z-index: 9999;
+  max-width: 90px;
+  min-width: 50px;
+  height: auto;
+  pointer-events: none;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  opacity: 0.9;
+}
+
 
 .icon {
+ width: 26% !important;
   position: absolute;
   z-index: 9999; /* 항상 최상단에 보이도록 */
   animation-timing-function: ease-in-out;
@@ -300,38 +317,34 @@ flex: 1;
   pointer-events: none; /* 클릭 방해 안 하도록 */
 }
 
-/* 🎥 icon-video - 우측 상단 */
-.icon-code {
-  width: 80px;
-  top: 40px;
-  right: 80px;
-  animation: floatVideo 4s ease-in-out infinite;
-  transform: rotate(-8deg);
-}
-
-/* 👨‍💻 icon-code - 좌측 상단 */
-.icon-video {
-  width: 90px;
-  top: 60px;
-  left: 40px;
-  animation: floatCode 5s ease-in-out infinite;
+/* 🎥 icon-video (좌측 상단) - 캐릭터 얼굴 바깥쪽으로 적당히 띄우기 */
+.profile-img-wrapper .icon-video {
+  top: 5%;
+  left: -12%; /* 마이너스 값으로 캐릭터 왼쪽 바깥 여백 주기 */
+  animation: floatVideo 5s ease-in-out infinite;
   transform: rotate(6deg);
 }
 
-/* 🎨 icon-paint - 우측 하단 */
-.icon-paint {
-  width: 90px;
-  top: 55%;
-  right: 80px;
+/* 👨‍💻 icon-code (우측 상단) */
+.profile-img-wrapper .icon-code {
+  top: 0%;
+  right: -12%; /* 마이너스 값으로 캐릭터 오른쪽 바깥 여백 주기 */
+  animation: floatCode 4s ease-in-out infinite;
+  transform: rotate(-8deg);
+}
+
+/* 🎨 icon-paint (우측 하단) */
+.profile-img-wrapper .icon-paint {
+  bottom: 15%;
+  right: -15%;
   animation: floatPaint 6s ease-in-out infinite;
   transform: rotate(-12deg);
 }
 
-/* 🧩 icon-ui - 좌측 하단 */
-.icon-ui {
-  width: 80px;
-  top: 60%;
-  left: 40px;
+/* 🧩 icon-ui (좌측 하단) */
+.profile-img-wrapper .icon-ui {
+  bottom: 20%;
+  left: -15%;
   animation: floatUI 4.5s ease-in-out infinite;
   transform: rotate(10deg);
 }
@@ -358,27 +371,9 @@ flex: 1;
 }
 
 
-/* .skills {
-    flex-shrink: 0;
-    margin: 0;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    gap: 15%;
-    background: #fff;
-    padding: 50px 0;
-    font-size: 22px;
-    font-weight: 500;
-    border-top: 1px solid #eee;
-    border-radius: 100px 100px;
-    margin-top: -10%;
-    margin-bottom: 100px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    z-index: 0;
-  } */
 
 .skills {
-display: flex;
+  display: flex;
   justify-content: center;
   gap: 15%;
   background: #fff;
@@ -388,10 +383,9 @@ display: flex;
   border-top: 1px solid #eee;
   border-radius: 100px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-
   /* 수정된 부분 */
   margin-top: -60px;   /* % 대신 px을 사용하여 캐릭터와 메뉴의 겹침 정도를 고정 */
-  margin-bottom: 50px; /* 하단 여백 최적화 */
+  margin-bottom: 20%; /* 하단 여백 최적화 */
   width: calc(100% - 60px);
   align-self: center;
   z-index: 10;         /* 캐릭터보다 위 혹은 아래로 조절 (이미지 상황에 따라) */
@@ -446,7 +440,7 @@ display: flex;
   }
 
   .left {
-    margin: 0 0 30px 0;     /* 텍스트 하단 여백만 남기고 중앙 배치 */
+    /* margin: 0 0 30px 0; */
     padding: 0;
     width: 100%;
     order: 1;               /* 텍스트가 위로 */
@@ -459,8 +453,8 @@ display: flex;
   }
 
   .profile-img {
-    width: 50vw;            /* 모바일 화면에 맞게 이미지 크기 조절 */
-    max-width: 280px;
+    width: 80vw;            /* 모바일 화면에 맞게 이미지 크기 조절 */
+    max-width: 400px;
     margin: 0 auto;
   }
 
@@ -515,9 +509,9 @@ display: flex;
   width: calc(100% - 60px); /* 좌우 총 60px 여백 확보 */
 }
 
-  .left {
+  /* .left {
     margin-top: 15%;
-  }
+  } */
 
 
   .right-background {
@@ -624,31 +618,14 @@ display: flex;
     padding: 10px 25px;
     font-size: 16px;
   }
-
+  
   .icon {
-    width: 50px !important;
-  }
-
-  .icon-video {
-    top: 5%;
-    left: 10%;
-  }
-
-  .icon-code {
-    top: 5%;
-    right: 10%;
-  }
-
-  .icon-paint {
-    bottom: 15%;
-    right: 10%;
-    top: auto;
-  }
-
-  .icon-ui {
-    bottom: 15%;
-    left: 10%;
-    top: auto;
+      position: absolute;
+      width: 15%; /* 화면 크기에 맞춰 아이콘 크기도 반응형으로 조절 */
+      max-width: 60px;
+      min-width: 35px;
+      height: auto;
+      z-index: 2; /* 캐릭터 뒤에 파묻히지 않도록 앞으로 오게 설정 */
   }
 
 
@@ -659,14 +636,14 @@ display: flex;
   }
 
   .profile-img {
-    width: 50vw;
-    max-width: 200px;
+    width: 60vw;
+    max-width: 350px;
     margin: 0 auto;
-    margin-left: 30px;
+    /* margin-left: 30px; */
   }
 
   .right {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 0;
     
   }
@@ -833,30 +810,7 @@ body, html {
         font-size: 16px;
       }
 
-      .icon
-      { width: 55px !important; }
 
-      .icon-video
-      { top: 5%;
-        left: 10%;
-      }
-
-      .icon-code
-      { top: 5%;
-        right: 10%;
-      }
-
-      .icon-paint {
-        bottom: 15%;
-        right: 10%;
-        top: auto;
-      }
-
-      .icon-ui {
-        bottom: 15%;
-        left: 10%;
-        top: auto;
-      }
 
       /* 프로필 이미지 중앙 정렬 */
       .profile-img-wrapper{
@@ -865,14 +819,14 @@ body, html {
       }
 
       .profile-img
-      { width: 55vw;
-        max-width: 250px;
+      { width: 60vw;
+        max-width: 350px;
         margin: 0 auto;
-        margin-left: 30px;
+        /* margin-left: 30px; */
       }
 
       .right {
-        margin-top: 20px;
+        /* margin-top: 20px; */
         padding: 0;
       }
 
@@ -1022,27 +976,7 @@ body, html {
     width: 60px !important;
   }
 
-  .icon-video {
-    top: 5%;
-    left: 10%;
-  }
 
-  .icon-code {
-    top: 5%;
-    right: 10%;
-  }
-
-  .icon-paint {
-    bottom: 15%;
-    right: 10%;
-    top: auto;
-  }
-
-  .icon-ui {
-    bottom: 15%;
-    left: 10%;
-    top: auto;
-  }
 
 
   /* 프로필 이미지 중앙 정렬 */
@@ -1053,13 +987,13 @@ body, html {
 
   .profile-img {
     width: 60vw;
-    max-width: 250px;
+    max-width: 380px;
     margin: 0 auto;
-    margin-left: 30px;
+    /* margin-left: 30px; */
   }
 
   .right {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 0;
     
   }
@@ -1213,27 +1147,7 @@ body, html {
     width: 70px !important;
   }
 
-  .icon-video {
-    top: 5%;
-    left: 10%;
-  }
 
-  .icon-code {
-    top: 5%;
-    right: 10%;
-  }
-
-  .icon-paint {
-    bottom: 15%;
-    right: 10%;
-    top: auto;
-  }
-
-  .icon-ui {
-    bottom: 15%;
-    left: 10%;
-    top: auto;
-  }
 
 
   /* 프로필 이미지 중앙 정렬 */
@@ -1243,14 +1157,14 @@ body, html {
   }
 
   .profile-img {
-    width: 52vw;
-    max-width: 300px;
+    width: 60vw;
+    max-width: 350px;
     margin: 0 auto;
-    margin-left: 30px;
+    /* margin-left: 30px; */
   }
 
   .right {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 0;
     
   }
@@ -1405,27 +1319,7 @@ body, html {
     width: 80px !important;
   }
 
-  .icon-video {
-    top: 5%;
-    left: 10%;
-  }
 
-  .icon-code {
-    top: 5%;
-    right: 10%;
-  }
-
-  .icon-paint {
-    bottom: 15%;
-    right: 10%;
-    top: auto;
-  }
-
-  .icon-ui {
-    bottom: 15%;
-    left: 10%;
-    top: auto;
-  }
 
 
   /* 프로필 이미지 중앙 정렬 */
@@ -1438,11 +1332,11 @@ body, html {
     width: 60vw;
     max-width: 350px;
     margin: 0 auto;
-    margin-left: 30px;
+    /* margin-left: 30px; */
   }
 
   .right {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 0;
     
   }
@@ -1502,7 +1396,7 @@ body, html {
   .bubble {
     font-size: 1.7vh;
     padding: 8px 14px;
-    margin-top: -5%;
+    /* margin-top: -5%; */
   }
 }
 
@@ -1598,27 +1492,7 @@ body, html {
     width: 100px !important;
   }
 
-  .icon-video {
-    top: 5%;
-    left: 10%;
-  }
 
-  .icon-code {
-    top: 5%;
-    right: 10%;
-  }
-
-  .icon-paint {
-    bottom: 15%;
-    right: 10%;
-    top: auto;
-  }
-
-  .icon-ui {
-    bottom: 15%;
-    left: 10%;
-    top: auto;
-  }
 
 
   /* 프로필 이미지 중앙 정렬 */
@@ -1631,13 +1505,12 @@ body, html {
     width: 80vw;
     max-width: 430px;
     margin: 0 auto;
-    margin-left: 30px;
+    /* margin-left: 30px; */
   }
 
   .right {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 0;
-    
   }
 
   
